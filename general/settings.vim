@@ -44,8 +44,8 @@ au! BufWritePost $MYVIMRC call ReloadVimrc()
 vmap '' :w !pbcopy<CR><CR>
 
 " change cursor in insert and normal mode
-let &t_SI = "\e[5 q"
-let &t_EI = "\e[1 q"
+let &t_SI = "<Esc>[5 q"
+let &t_EI = "<Esc>[3 q"
 
 "########################################
 " Python
@@ -84,11 +84,10 @@ set encoding=utf-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
 set ruler              	                " Show the cursor position all the time
-set cmdheight=2                         " More space for displaying messages
+set cmdheight=1                         " More space for displaying messages
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set splitbelow                          " Horizontal splits will automatically be below
 set splitright                          " Vertical splits will automatically be to the right
-set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
@@ -111,3 +110,9 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 
 " You can't stop me
 cmap w!! w !sudo tee %
+
+" disable arrow key
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>

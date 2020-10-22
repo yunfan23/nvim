@@ -5,3 +5,5 @@ inoremap kj <Esc>
 " commentary shortcut re-mapping
 nnoremap <space>/ :Commentary<CR>
 vnoremap <space>/ :Commentary<CR>
+
+inoremap ZZ <Esc>:wqa<CR>
