@@ -18,6 +18,7 @@ source $HOME/.config/nvim/colors/monokai.vim
 source $HOME/.config/nvim/themes/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
+source $HOME/.config/nvim/plug-config/signify.vim
 
 " vscode neovim extension
 if exists('g:vscode')
