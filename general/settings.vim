@@ -75,7 +75,7 @@ set textwidth=80
 set colorcolumn=+1
 
 " set leader key
-let g:mapleader = "\<Space>"
+let g:mapleader = " "
 
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers

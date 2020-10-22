@@ -19,6 +19,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
