@@ -29,7 +29,6 @@ Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
-Plug 'mhinz/vim-startify'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
