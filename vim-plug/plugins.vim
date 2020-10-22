@@ -25,6 +25,10 @@ Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+Plug 'kassio/neoterm'
+Plug 'benmills/vimux'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
