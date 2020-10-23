@@ -50,6 +50,9 @@ Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
 Plug 'Chiel92/vim-autoformat'
 Plug 'ryanoasis/vim-devicons'
+Plug 'kien/rainbow_parentheses.vim'
+Plug 'dense-analysis/ale'
+Plug 'scrooloose/syntastic'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'

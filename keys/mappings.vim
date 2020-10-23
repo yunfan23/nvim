@@ -23,3 +23,5 @@ noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+
+map <F5> :call CompileRunGcc()<CR>
