@@ -1,0 +1,23 @@
+#!/usr/bin/bash
+
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+alias lr='ls -lrth'
+alias ll='ls -l'
+alias pd='python -m pdb'
+alias b='cd ..'
+alias h='history'
+py() { time python -u "$1" | tee "$1.log"; }
+#
+# force tmux use 256 colors fixing the color issue in nvim
+alias tmux='tmux -2'
+alias vi='$HOME/nvim/nvim.appimage'
