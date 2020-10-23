@@ -13,12 +13,12 @@ filetype plugin indent on
 "########################################
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") 
             \ | exec "normal! g'\"" | endif
-imap jj <Esc>
+set nocompatible
 set hls
 set encoding=utf-8
-set nocompatible
+set encoding=utf8
 set incsearch
-set noic
+set ic
 set number
 
 "set cursorline
@@ -112,4 +112,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 " You can't stop me
 cmap w!! w !sudo tee %
 
-set guifont=DroidSansMono\ Nerd\ Font\ 11
+" set guifont=DroidSansMono\ Nerd\ Font\ 11
+" set guifont=DroidSansMono\ Nerd\ Font:h11
+set guifont=DroidSansMono_Nerd_Font:h11
