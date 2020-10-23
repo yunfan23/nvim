@@ -5,6 +5,22 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif
+
+let plug_install = 0
+let autoload_plug_path = stdpath('config') . '/autoload/plug.vim'
+if !filereadable(autoload_plug_path)
+    silent exe '!curl -fL --create-dirs -o ' . autoload_plug_path . 
+        \ ' https://raw.github.com/junegunn/vim-plug/master/plug.vim'
+    execute 'source ' . fnameescape(autoload_plug_path)
+    let plug_install = 1
+endif
+unlet autoload_plug_path
+
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -21,7 +37,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-rooter'
 Plug 'mhinz/vim-signify'
@@ -34,6 +49,9 @@ Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
 Plug 'Chiel92/vim-autoformat'
+Plug 'ryanoasis/vim-devicons'
+
+>>>>>>> cf368ea80ed6f26dd7f018b24bc5034810567ded
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
 else
@@ -41,8 +59,7 @@ else
 endif
 call plug#end()
 
-" Automatically install missing plugins on startup
-autocmd VimEnter *
-  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \|   PlugInstall --sync | q
-  \| endif
+if plug_install
+    PlugInstall --sync
+endif
+unlet plug_install
