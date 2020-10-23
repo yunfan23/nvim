@@ -33,7 +33,7 @@ Plug 'iamcco/markdown-preview.vim'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
-
+Plug 'Chiel92/vim-autoformat'
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
 else
