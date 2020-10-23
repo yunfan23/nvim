@@ -1,4 +1,4 @@
-let g:python3_host_prog="$HOME/miniconda3/bin/python"
+let g:python3_host_prog="$HOME/anaconda3/bin/python"
 let g:autoformat_autoindent = 0
 let g:autoformat_retab = 0
 let g:autoformat_remove_trailing_spaces = 0

@@ -11,4 +11,3 @@ let g:webdevicons_enable_airline_statusline = 1
 " adding to vim-startify screen
 let g:webdevicons_enable_startify = 1
 let g:WebDevIconsOS = 'Darwin'
-set guifont=DroidSansMono\ Nerd\ Font\ 11

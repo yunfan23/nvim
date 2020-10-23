@@ -51,7 +51,6 @@ Plug 'mhinz/vim-startify'
 Plug 'Chiel92/vim-autoformat'
 Plug 'ryanoasis/vim-devicons'
 
->>>>>>> cf368ea80ed6f26dd7f018b24bc5034810567ded
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
 else
