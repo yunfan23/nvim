@@ -14,9 +14,9 @@ tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
 
 " Toggle terminal on/off (neovim)
-nnoremap <A-t> :call TermToggle(12)<CR>
-inoremap <A-t> <Esc>:call TermToggle(12)<CR>
-tnoremap <A-t> <C-\><C-n>:call TermToggle(12)<CR>
+nnoremap <C-T> :call TermToggle(12)<CR>
+inoremap <C-T> <Esc>:call TermToggle(12)<CR>
+tnoremap <C-T> <C-\><C-n>:call TermToggle(12)<CR>
 
 " disable arrow key
 noremap <Up> <Nop>
