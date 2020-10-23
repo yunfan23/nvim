@@ -3,7 +3,6 @@ let g:coc_global_extensions = [
     \ 'coc-actions',
     \ 'coc-sh',
     \ 'coc-pairs',
-    \ 'coc-tsserver',
     \ 'coc-floaterm',
     \ 'coc-python',
     \ 'coc-explorer',

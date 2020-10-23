@@ -24,8 +24,8 @@ if !exists('g:airline_symbols')
 endif
 
 " unicode symbols
-" let g:airline_left_sep = ''
-" let g:airline_right_sep = ''
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 " let g:airline_symbols.linenr = '␊'
 " let g:airline_symbols.branch = '⎇'
 " let g:airline_symbols.paste = 'ρ'
@@ -36,7 +36,7 @@ endif
 " let g:airline_symbols.dirty='⚡'
 
 " Just show the filename (no path) in the tab
-let g:airline#extensions#tabline#fnamemod = ':t'
+" let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Just show file name in section C
-let g:airline_section_c = '%t'
+" let g:airline_section_c = '%t'
