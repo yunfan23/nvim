@@ -25,6 +25,7 @@ source $HOME/.config/nvim/plug-config/devicons.vim
 source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
+source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/settings.vim

@@ -24,7 +24,6 @@ unlet autoload_plug_path
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -53,6 +52,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'dense-analysis/ale'
 Plug 'scrooloose/syntastic'
+Plug 'sheerun/vim-polyglot'
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
