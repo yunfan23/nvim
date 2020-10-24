@@ -110,3 +110,5 @@ cmap w!! w !sudo tee %
 autocmd FileType * setlocal textwidth=80 formatoptions+=tw
 " highlight column after textwidth
 set colorcolumn=+1
+
+colorscheme dracula

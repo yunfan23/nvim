@@ -54,6 +54,7 @@ Plug 'dense-analysis/ale'
 Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'rbgrouleff/bclose.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 if exists('g:vscode')
