@@ -13,13 +13,6 @@ filetype plugin indent on
 "########################################
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") 
             \ | exec "normal! g'\"" | endif
-set nocompatible
-set hls
-set encoding=utf-8
-set encoding=utf8
-set incsearch
-set ic
-set number
 
 "set cursorline
 hi cursorline cterm=none term=none
@@ -50,6 +43,12 @@ let &t_EI = "<Esc>[3 q"
 "########################################
 " Python
 "########################################
+" autopep8 setting
+au FileType python setlocal formatprg=autopep8\ -
+
+" set leader key
+let g:mapleader = " "
+
 " Minimal Config
 set smartindent
 set shiftwidth=4
@@ -60,20 +59,18 @@ set relativenumber
 set tabstop=4
 set smarttab
 
-" proving the setting
-set listchars=tab:>-,trail:-,nbsp:_
-set list
-
-" autopep8 setting
-au FileType python setlocal formatprg=autopep8\ -
-
 " improving backspace
 set backspace=indent,eol,start
 
-" set leader key
-let g:mapleader = " "
-
-syntax enable                           " Enables syntax highlighing
+" proving the setting
+set listchars=tab:>-,trail:-,nbsp:_
+set list
+set nocompatible
+set hls
+set encoding=utf8
+set incsearch
+set ic
+set number
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -102,13 +99,12 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set t_Co=256
+set colorcolumn=+1                      " highlight column after textwidth
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
 cmap w!! w !sudo tee %
 autocmd FileType * setlocal textwidth=80 formatoptions+=tw
-" highlight column after textwidth
-set colorcolumn=+1
 
 colorscheme dracula
