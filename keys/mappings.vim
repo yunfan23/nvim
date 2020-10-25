@@ -25,3 +25,6 @@ noremap <Left> <Nop>
 noremap <Right> <Nop>
 
 map <F5> :call CompileRun()<CR>
+
+nmap <silent> <Leader>j <Plug>(coc-diagnostic-next-error)
+nmap <silent> <Leader>k <Plug>(coc-diagnostic-prev-error)
