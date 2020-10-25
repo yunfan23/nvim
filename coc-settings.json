@@ -1,13 +1,9 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "json",
-        "python"
-    ],
-    "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
-    "snippets.ultisnips.directories": [
-        "UltiSnips",
-        "~/.config/nvim/snippets"
-    ],
-    "suggest.noselect": false
+  "coc.preferences.formatOnSaveFiletypes": ["json", "python"],
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintArgs": [],
+  "python.analysis.diagnosticEnabled": false,
+  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snippets"],
+  "suggest.noselect": false
 }
