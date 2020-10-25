@@ -23,7 +23,7 @@ function! TermToggle(height)
     endif
 endfunction
 
-func! CompileRunGcc()
+func! CompileRun()
         exec "w"
         if &filetype == 'c'
                 exec "!g++ % -o %<"
@@ -38,7 +38,7 @@ func! CompileRunGcc()
                 :!time bash %
         elseif &filetype == 'python'
                 exec "!clear"
-                exec "!time python3 %"
+                exec "!time python %"
         elseif &filetype == 'html'
                 exec "!firefox % &"
         elseif &filetype == 'go'
