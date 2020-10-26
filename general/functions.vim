@@ -37,7 +37,6 @@ func! CompileRun()
         elseif &filetype == 'sh'
                 :!time bash %
         elseif &filetype == 'python'
-                exec "!clear"
                 exec "!time python %"
         elseif &filetype == 'html'
                 exec "!firefox % &"

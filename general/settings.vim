@@ -52,12 +52,11 @@ let g:mapleader = " "
 " Minimal Config
 set smartindent
 set shiftwidth=4
-set expandtab
 set relativenumber
 
 " Consistency
 set tabstop=4
-set smarttab
+set softtabstop=4
 
 " improving backspace
 set backspace=indent,eol,start
