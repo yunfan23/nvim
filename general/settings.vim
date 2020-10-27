@@ -107,3 +107,6 @@ cmap w!! w !sudo tee %
 autocmd FileType * setlocal textwidth=80 formatoptions+=tw
 
 colorscheme dracula
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
