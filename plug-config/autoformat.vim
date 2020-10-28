@@ -5,4 +5,5 @@ let g:autoformat_remove_trailing_spaces = 0
 " au BufWrite * :Autoformat
 noremap <F3> :Autoformat<CR>
 let g:formatdef_autopep8 = "'autopep8 - --range '.a:firstline.' '.a:lastline"
-let g:formatters_python = ['autopep8']
+let g:formatters_python = ['autopep8', 'black', 'yapf']
+let g:run_all_formatters_python = 1
