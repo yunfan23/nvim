@@ -30,3 +30,8 @@ nmap <silent> <Leader>j <Plug>(coc-diagnostic-next-error)
 nmap <silent> <Leader>k <Plug>(coc-diagnostic-prev-error)
 
 nmap <silent> <C-_> <Plug>(pydocstring)
+
+" mapping key to add quote around the word
+nnoremap <Leader>q" ciW""<Esc>P
+nnoremap <Leader>q' ciW''<Esc>P
+nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
