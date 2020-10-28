@@ -20,7 +20,6 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/devicons.vim
 source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
 source $HOME/.config/nvim/plug-config/ale.vim
-" source $HOME/.config/nvim/plug-config/syntastic.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim

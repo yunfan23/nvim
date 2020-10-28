@@ -34,7 +34,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
@@ -48,7 +47,6 @@ Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'dense-analysis/ale'
-" Plug 'scrooloose/syntastic'
 Plug 'sheerun/vim-polyglot'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'junegunn/goyo.vim'
@@ -57,12 +55,11 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'unblevable/quick-scope'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
- Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mileszs/ack.vim'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
-else
-	Plug 'jiangmiao/auto-pairs'
 endif
 call plug#end()
 

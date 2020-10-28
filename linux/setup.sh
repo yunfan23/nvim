@@ -2,3 +2,4 @@ curl -fLo $HOME/nvim/nvim.appimage --create-dirs https://github.com/neovim/neovi
 pip install pynvim
 brew install --HEAD neovim
 brew install luarocks
+brew install ack
