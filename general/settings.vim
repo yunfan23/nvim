@@ -45,6 +45,16 @@ let &t_EI = "<Esc>[3 q"
 "########################################
 " autopep8 setting
 au FileType python setlocal formatprg=autopep8\ -
+set foldmethod=indent
+" au FileType * exe "normal zR"
+set nofoldenable
+
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
+nnoremap <space> za
+vnoremap <space> zf
 
 " set leader key
 let g:mapleader = " "
