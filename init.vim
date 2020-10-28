@@ -17,8 +17,6 @@ source $HOME/.config/nvim/plug-config/signify.vim
 source $HOME/.config/nvim/plug-config/markdown.vim
 source $HOME/.config/nvim/plug-config/easymotion.vim
 source $HOME/.config/nvim/plug-config/start-screen.vim
-source $HOME/.config/nvim/plug-config/vim-rooter.vim
-source $HOME/.config/nvim/plug-config/autoformat.vim
 source $HOME/.config/nvim/plug-config/devicons.vim
 source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
 source $HOME/.config/nvim/plug-config/ale.vim

@@ -19,10 +19,10 @@ inoremap <C-T> <Esc>:call TermToggle(12)<CR>
 tnoremap <C-T> <C-\><C-n>:call TermToggle(12)<CR>
 
 " disable arrow key
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
 
 map <F5> :call CompileRun()<CR>
 
