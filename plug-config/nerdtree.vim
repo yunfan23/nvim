@@ -38,3 +38,22 @@ call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
+
+
+" let g:NERDTreeGitStatusIndicatorMapCustom = {
+"                 \ 'Modified'  :'‚úπ',
+"                 \ 'Staged'    :'‚úö',
+"                 \ 'Untracked' :'‚ú≠',
+"                 \ 'Renamed'   :'‚ûú',
+"                 \ 'Unmerged'  :'‚ïê',
+"                 \ 'Deleted'   :'‚úñ',
+"                 \ 'Dirty'     :'‚úó',
+"                 \ 'Ignored'   :'‚òí',
+"                 \ 'Clean'     :'‚úîÔ∏é',
+"                 \ 'Unknown'   :'?',
+"                 \ }
+
+let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeGitStatusUntrackedFilesMode = 'all'
+let g:NERDTreeGitStatusShowClean = 1
+let g:NERDTreeGitStatusConcealBrackets = 1

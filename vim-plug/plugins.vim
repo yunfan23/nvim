@@ -57,6 +57,7 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'unblevable/quick-scope'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
+ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
