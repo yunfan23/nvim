@@ -13,10 +13,8 @@ let g:php_folding = 1
 
 nmap zuz <Plug>(FastFoldUpdate)
 
-let g:fastfold_savehook = 1
-let g:fastfold_fold_command_suffixes =  ['x','X','a','A','o','O','c','C']
+let g:fastfold_savehook = 0
 let g:fastfold_fold_movement_commands = [']z', '[z', 'zj', 'zk']
-
 let g:fastfold_fold_command_suffixes =
      \['x','X','a','A','o','O','c','C','r','R','m','M','i','n','N']
 
@@ -25,5 +23,12 @@ let g:SimpylFold_fold_docstring	= 1
 let b:SimpylFold_fold_docstring = 1
 let g:SimpylFold_fold_import = 1
 let b:SimpylFold_fold_import = 1
-let g:SimpylFold_fold_blank = 0
-let b:SimpylFold_fold_blank = 0
+let g:SimpylFold_fold_blank = 1
+let b:SimpylFold_fold_blank = 1
+
+set foldmethod=indent
+au FileType * exe "normal zR"
+set nofoldenable
+
+nnoremap <space> za
+vnoremap <space> zf

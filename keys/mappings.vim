@@ -26,9 +26,6 @@ tnoremap <C-T> <C-\><C-n>:call TermToggle(12)<CR>
 
 map <F5> :call CompileRun()<CR>
 
-nmap <silent> <Leader>j <Plug>(coc-diagnostic-next-error)
-nmap <silent> <Leader>k <Plug>(coc-diagnostic-prev-error)
-
 nmap <silent> <C-_> <Plug>(pydocstring)
 
 " mapping key to add quote around the word
