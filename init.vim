@@ -24,6 +24,7 @@ source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
+source $HOME/.config/nvim/plug-config/fold.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/settings.vim

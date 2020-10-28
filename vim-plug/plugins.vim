@@ -55,6 +55,8 @@ Plug 'junegunn/goyo.vim'
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'unblevable/quick-scope'
+Plug 'tmhedberg/SimpylFold'
+Plug 'Konfekt/FastFold'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
