@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/yunfan/.oh-my-zsh"
+ZSH_THEME="dracula"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -70,8 +71,7 @@ export ZSH="/home/yunfan/.oh-my-zsh"
 plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
-ZSH_THEME="random"
-# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{blue}%3~%f%b \$ '
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{13}%3d%f%b \$ '
 # RPROMPT='%*'
 
 # User configuration
