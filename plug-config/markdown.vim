@@ -5,7 +5,7 @@ let g:mkdp_auto_start = 0
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
 " default: 1
-let g:mkdp_auto_close = 0
+let g:mkdp_auto_close = 1
 
 " set to 1, the vim will refresh markdown when save the buffer or
 " leave from insert mode, default 0 is auto refresh markdown as you edit or
@@ -21,7 +21,7 @@ let g:mkdp_command_for_global = 0
 " set to 1, preview server available to others in your network
 " by default, the server listens on localhost (127.0.0.1)
 " default: 0
-let g:mkdp_open_to_the_world = 1
+let g:mkdp_open_to_the_world = 0
 
 " use custom IP to open preview page
 " useful when you work in remote vim and preview on local browser
@@ -55,6 +55,7 @@ let g:mkdp_browserfunc = ''
 " hide_yaml_meta: if hide yaml metadata, default is 1
 " sequence_diagrams: js-sequence-diagrams options
 " content_editable: if enable content editable for preview page, default: v:false
+" disable_filename: if disable filename header for preview page, default: 0
 let g:mkdp_preview_options = {
     \ 'mkit': {},
     \ 'katex': {},
@@ -65,7 +66,8 @@ let g:mkdp_preview_options = {
     \ 'hide_yaml_meta': 1,
     \ 'sequence_diagrams': {},
     \ 'flowchart_diagrams': {},
-    \ 'content_editable': v:false
+    \ 'content_editable': v:false,
+    \ 'disable_filename': 0
     \ }
 
 " use a custom markdown style must be absolute path
@@ -83,6 +85,4 @@ let g:mkdp_port = ''
 " ${name} will be replace with the file name
 let g:mkdp_page_title = '「${name}」'
 
-" let g:mkdp_path_to_chrome = "open -a Google\\ Chrome"
-" or
-let g:mkdp_path_to_chrome = "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome"
+let g:mkdp_path_to_chrome = "/Applications/Microsoft\ Edge.app/Contents/MacOS/Microsoft\ Edge"

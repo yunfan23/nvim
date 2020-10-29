@@ -3,3 +3,5 @@ pip install pynvim
 brew install --HEAD neovim
 brew install luarocks
 brew install ack
+pip install grip
+pip install mdv
