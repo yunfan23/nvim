@@ -1,11 +1,4 @@
-"    ____      _ __        _
-"   /  _/___  (_) /__   __(_)___ ___
-"   / // __ \/ / __/ | / / / __ `__ \
-" _/ // / / / / /__| |/ / / / / / / /
-"/___/_/ /_/_/\__(_)___/_/_/ /_/ /_/
-
-"##############################################################################
-" neovim init settings
+"    ____      _ __        settings
 " author: Yunfan
 " v1: 22 oct 2020
 "##############################################################################
@@ -20,7 +13,6 @@ source $HOME/.config/nvim/plug-config/start-screen.vim
 source $HOME/.config/nvim/plug-config/devicons.vim
 source $HOME/.config/nvim/plug-config/rainbow_parentheses.vim
 source $HOME/.config/nvim/plug-config/ale.vim
-source $HOME/.config/nvim/plug-config/rnvimr.vim
 source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/fold.vim

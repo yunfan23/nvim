@@ -7,6 +7,8 @@
 "########################################
 syntax on
 filetype plugin indent on
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
 
 "########################################
 "" Settings
@@ -47,7 +49,7 @@ let &t_EI = "<Esc>[3 q"
 au FileType python setlocal formatprg=autopep8\ -
 
 " set leader key
-let g:mapleader = " "
+" let g:mapleader = " "
 
 " Minimal Config
 set smartindent
@@ -106,7 +108,6 @@ au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm al
 cmap w!! w !sudo tee %
 autocmd FileType * setlocal textwidth=80 formatoptions+=tw
 
-colorscheme dracula
-
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+colorscheme dracula

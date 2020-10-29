@@ -50,7 +50,6 @@ Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'unblevable/quick-scope'
 Plug 'tmhedberg/SimpylFold'
