@@ -7,23 +7,15 @@
 "########################################
 syntax on
 filetype plugin indent on
-set runtimepath^=~/.vim runtimepath+=~/.vim/after
-let &packpath=&runtimepath
 
 "########################################
 "" Settings
 "########################################
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") 
-            \ | exec "normal! g'\"" | endif
-
 "set cursorline
 hi cursorline cterm=none term=none
 hi cursorlinenr ctermfg=yellow term=none cterm=none
 " set line number to dark grey
 hi LineNr ctermfg=DarkGrey
-
-au WinEnter * setlocal cursorline
-au WinLeave * setlocal nocursorline
 
 " Reloads vimrc after saving but keep cursor position
 if !exists('*ReloadVimrc')
@@ -101,19 +93,12 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set t_Co=256
 
-" if has("termguicolors")
-"     set termguicolors
-" endif
-
 set colorcolumn=+1                      " highlight column after textwidth
-
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 
 " You can't stop me
 cmap w!! w !sudo tee %
-autocmd FileType * setlocal textwidth=80 formatoptions+=tw
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-" colorscheme dracula
 colorscheme monokai
