@@ -36,6 +36,7 @@ Plug 'unblevable/quick-scope'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'patstockwell/vim-monokai-tasty'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
