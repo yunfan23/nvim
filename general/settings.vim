@@ -103,7 +103,9 @@ cmap w!! w !sudo tee %
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 " colorscheme monokai
 if has('unix')
-    colorscheme dracula
+    let s:uname = system("uname -s")
+    if s:uname == "Darwin"
+        colorscheme dracula
 else
     colorscheme monokai
 endif

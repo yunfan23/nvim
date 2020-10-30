@@ -25,3 +25,5 @@ if exists('g:vscode')
   source $HOME/.config/nvim/plug-config/easymotion.vim
 endif
 
+let uname = substitute(system('uname'), '\n', '', '')
+echo uname
