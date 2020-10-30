@@ -71,7 +71,7 @@ ZSH_THEME="dracula"
 plugins=(zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{13}%3d%f%b \$ '
+# PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{13}%3d%f%b \$ '
 # RPROMPT='%*'
 
 # User configuration
@@ -118,3 +118,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+#
+
+# set guifont=Hack\ Nerd\ Font\ 13
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export TERM='xterm-256color'
+export PROMPT="$PROMPT\$ "
