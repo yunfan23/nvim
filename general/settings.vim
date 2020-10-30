@@ -99,7 +99,12 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-set t_Co=256
+" set t_Co=256
+
+if has("termguicolors")
+    set termguicolors
+endif
+
 set colorcolumn=+1                      " highlight column after textwidth
 
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
