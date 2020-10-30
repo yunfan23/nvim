@@ -106,6 +106,7 @@ if has('unix')
     let s:uname = system("uname -s")
     if s:uname == "Darwin"
         colorscheme dracula
+    endif
 else
     colorscheme monokai
 endif
