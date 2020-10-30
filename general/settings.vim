@@ -34,6 +34,12 @@ vmap '' :w !pbcopy<CR><CR>
 let &t_SI = "<Esc>[5 q"
 let &t_EI = "<Esc>[3 q"
 
+" Return to last edit position when opening files
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
+
 "########################################
 " Python
 "########################################
@@ -101,7 +107,8 @@ cmap w!! w !sudo tee %
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-" colorscheme monokai
+
+colorscheme monokai
 if has('unix')
     let s:uname = substitute(system("uname -s"), "\n", "", "")
     if s:uname == "Darwin"
@@ -111,4 +118,3 @@ if has('unix')
         " let g:airline_theme='monokai_tasty'
     endif
 endif
-colorscheme monokai
