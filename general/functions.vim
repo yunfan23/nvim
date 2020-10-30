@@ -57,4 +57,5 @@ function HeaderPython()
     normal G
     normal o
 endf
+
 autocmd bufnewfile *.py call HeaderPython()

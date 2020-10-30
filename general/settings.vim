@@ -99,11 +99,11 @@ set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
-" set t_Co=256
+set t_Co=256
 
-if has("termguicolors")
-    set termguicolors
-endif
+" if has("termguicolors")
+"     set termguicolors
+" endif
 
 set colorcolumn=+1                      " highlight column after textwidth
 
@@ -115,4 +115,5 @@ autocmd FileType * setlocal textwidth=80 formatoptions+=tw
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
-colorscheme dracula
+" colorscheme dracula
+colorscheme monokai
