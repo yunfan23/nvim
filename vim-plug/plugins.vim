@@ -56,7 +56,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mileszs/ack.vim'
-
+Plug 'Yggdroot/indentLine'
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
 endif

@@ -1,4 +1,4 @@
-"    ____      _ __        settings
+"##############################################################################
 " author: Yunfan
 " v1: 22 oct 2020
 "##############################################################################
@@ -16,6 +16,7 @@ source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/nerdcommenter.vim
 source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/fold.vim
+source $HOME/.config/nvim/plug-config/indent.vim
 source $HOME/.config/nvim/general/functions.vim
 source $HOME/.config/nvim/keys/mappings.vim
 source $HOME/.config/nvim/general/settings.vim
