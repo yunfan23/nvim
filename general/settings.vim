@@ -46,21 +46,15 @@ autocmd BufReadPost *
 " autopep8 setting
 au FileType python setlocal formatprg=autopep8\ -
 
-" set leader key
-" let g:mapleader = " "
-
 " Minimal Config
 set smartindent
 set shiftwidth=4
 set relativenumber
-
 " Consistency
 set tabstop=4
 set softtabstop=4
-
 " improving backspace
 set backspace=indent,eol,start
-
 " proving the setting
 set listchars=tab:>-,trail:-,nbsp:_
 set list
@@ -108,13 +102,5 @@ cmap w!! w !sudo tee %
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
-colorscheme monokai
-if has('unix')
-    let s:uname = substitute(system("uname -s"), "\n", "", "")
-    if s:uname == "Darwin"
-        colorscheme dracula
-        " let g:vim_monokai_tasty_italic = 1
-        " colorscheme vim-monokai-tasty
-        " let g:airline_theme='monokai_tasty'
-    endif
-endif
+" colorscheme monokai
+colorscheme dracula

@@ -4,7 +4,6 @@ let g:coc_global_extensions = [
     \ 'coc-sh',
     \ 'coc-pairs',
     \ 'coc-python',
-    \ 'coc-prettier',
     \ 'coc-vimlsp',
     \ 'coc-json',
     \ ]
