@@ -46,6 +46,8 @@ Plug 'Yggdroot/indentLine'
 Plug 'patstockwell/vim-monokai-tasty'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'tmhedberg/SimpylFold'
+Plug 'Konfekt/FastFold'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
