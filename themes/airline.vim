@@ -10,15 +10,17 @@ let g:airline_powerline_fonts = 1
 " let g:airline_theme='dark'
 
 " Always show tabs
-" set showtabline=2
+set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
 set noshowmode
+" show filename only
+set statusline=%t
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
 " unicode symbols
-let g:airline_left_sep = ''
-let g:airline_right_sep = ''
+" let g:airline_left_sep = ''
+" let g:airline_right_sep = ''
