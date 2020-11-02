@@ -37,6 +37,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mileszs/ack.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'patstockwell/vim-monokai-tasty'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
