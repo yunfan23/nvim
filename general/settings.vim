@@ -95,7 +95,7 @@ set t_Co=256
 set textwidth=79
 set colorcolumn=+1                      " highlight column after textwidth
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
+autocmd BufWritePre * %s/\s\+$//e
 " You can't stop me
 cmap w!! w !sudo tee %
 
