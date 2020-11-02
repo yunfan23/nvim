@@ -6,22 +6,22 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter *
             \   if !argc() && !exists("s:std_in")
             \ |   Startify
-            \ |   NERDTree
+            " \ |   NERDTree
             \ |   wincmd w
             \ | endif
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && 
-            \ exists("b:NERDTree") && 
+autocmd bufenter * if (winnr("$") == 1 &&
+            \ exists("b:NERDTree") &&
             \ b:NERDTree.isTabTree()) | q | endif
 
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . 
-             \ a:extension .' ctermbg='. a:bg .' ctermfg='. 
+ exec 'autocmd filetype nerdtree highlight ' .
+             \ a:extension .' ctermbg='. a:bg .' ctermfg='.
              \ a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . 
+ exec 'autocmd filetype nerdtree syn match ' .
              \a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
