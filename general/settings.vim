@@ -106,3 +106,4 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " colorscheme monokai
 colorscheme dracula
+highlight Normal ctermbg=235

@@ -1,9 +1,17 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["json"],
-  "python.linting.enabled": false,
-  "python.linting.pylintEnabled": false,
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length=79"],
-  "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snippets"],
-  "suggest.noselect": false
+    "coc.preferences.formatOnSaveFiletypes": [
+        "json"
+    ],
+    "coc.preferences.jumpCommand": "drop",
+    "python.linting.enabled": false,
+    "python.linting.pylintEnabled": false,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=79"
+    ],
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/snippets"
+    ],
+    "suggest.noselect": false
 }
