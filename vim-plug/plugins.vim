@@ -48,6 +48,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
+Plug 'severin-lemaignan/vim-minimap'
+Plug 'Chiel92/vim-autoformat'
 
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
