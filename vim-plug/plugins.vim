@@ -52,4 +52,5 @@ Plug 'Konfekt/FastFold'
 if exists('g:vscode')
 	Plug 'asvetliakov/vim-easymotion'
 endif
+
 call plug#end()

@@ -93,7 +93,7 @@ set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamed,unnamedplus       " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
-set colorcolumn=+1                      " highlight column after textwidth
+" set colorcolumn=+1                      " highlight column after textwidth
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au BufWritePre * %s/\s\+$//e
 au BufRead * normal zR
