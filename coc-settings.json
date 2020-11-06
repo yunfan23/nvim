@@ -1,7 +1,5 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [
-        "json"
-    ],
+    "coc.preferences.formatOnSaveFiletypes": [],
     "coc.preferences.jumpCommand": "drop",
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": false,

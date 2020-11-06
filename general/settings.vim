@@ -104,6 +104,6 @@ cmap w!! w !sudo tee %
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
-" colorscheme monokai
 colorscheme dracula
+set background=dark " for the dark version
 highlight Normal ctermbg=236
