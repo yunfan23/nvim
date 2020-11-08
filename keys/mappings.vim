@@ -25,3 +25,7 @@ nmap <silent> <C-_> <Plug>(pydocstring)
 nnoremap <Leader>q" ciW""<Esc>P
 nnoremap <Leader>q' ciW''<Esc>P
 nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
+
+
+" tag bar
+nmap <F8> :TagbarToggle<CR>

@@ -50,5 +50,7 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'Konfekt/FastFold'
 Plug 'severin-lemaignan/vim-minimap'
 Plug 'Chiel92/vim-autoformat'
+Plug 'preservim/tagbar'
+Plug 'crusoexia/vim-monokai'
 
 call plug#end()
