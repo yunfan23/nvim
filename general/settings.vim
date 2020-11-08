@@ -112,3 +112,5 @@ let g:monokai_gui_italic = 1
 let g:sublimemonokai_term_italic = 1
 set background=dark " for the dark version
 highlight Normal ctermbg=236
+
+let g:rainbow_active=1
