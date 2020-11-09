@@ -97,7 +97,6 @@ set textwidth=79
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au BufWritePre * %s/\s\+$//e
 au BufRead * normal zR
-" au BufWinEnter * let &foldlevel=max(map(range(1, line('$')), 'foldlevel(v:val)'))
 " You can't stop me
 cmap w!! w !sudo tee %
 
@@ -111,6 +110,6 @@ let g:monokai_term_italic = 1
 let g:monokai_gui_italic = 1
 let g:sublimemonokai_term_italic = 1
 set background=dark " for the dark version
-highlight Normal ctermbg=236
+highlight Normal ctermbg=255
 
 let g:rainbow_active=1

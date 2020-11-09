@@ -52,5 +52,6 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/tagbar'
 Plug 'crusoexia/vim-monokai'
+Plug 'luochen1990/rainbow'
 
 call plug#end()
