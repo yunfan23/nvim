@@ -9,6 +9,7 @@ if exists('g:vscode')
   source $HOME/.config/nvim/vscode/plugins.vim
   source $HOME/.config/nvim/vscode/settings.vim
   source $HOME/.config/nvim/vscode/keymappings.vim
+  source $HOME/.config/nvim/vscode/easymotion.vim
 else
   source $HOME/.config/nvim/vim-plug/plugins.vim
   source $HOME/.config/nvim/plug-config/coc.vim

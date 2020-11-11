@@ -1,7 +1,6 @@
 let g:coc_global_extensions = [
     \ 'coc-snippets',
     \ 'coc-actions',
-    \ 'coc-sh',
     \ 'coc-pairs',
     \ 'coc-python',
     \ 'coc-vimlsp',
