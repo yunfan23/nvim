@@ -106,4 +106,10 @@ colorscheme dracula
 
 let g:rainbow_active=1
 autocmd FileType * setlocal formatoptions-=cro
+" do not change tab to space when editing makefile
 autocmd FileType make setlocal noexpandtab
+
+" change font in GUI mode
+set guifont=Hack\ Nerd\ Font:h20
+" change line spacing in GUI mode
+set linespace=5
