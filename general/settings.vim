@@ -47,6 +47,9 @@ autocmd BufReadPost *
 au FileType python setlocal formatprg=autopep8\ -
 
 " Minimal Config
+" display a tab as ">----"
+set listchars=tab:>-,trail:-,nbsp:_
+set list
 set smartindent
 set shiftwidth=4
 set relativenumber
@@ -55,9 +58,6 @@ set tabstop=4
 set softtabstop=4
 " improving backspace
 set backspace=indent,eol,start
-" proving the setting
-set listchars=tab:>-,trail:-,nbsp:_
-set list
 set nocompatible
 set hls
 set encoding=utf8
@@ -89,15 +89,14 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
-set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamed,unnamedplus       " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
-" set colorcolumn=+1                      " highlight column after textwidth
+set colorcolumn=+1                      " highlight column after textwidth
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au BufWritePre * %s/\s\+$//e
 au BufRead * normal zR
-" You can't stop me
+" Force writing in read-only mode
 cmap w!! w !sudo tee %
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
@@ -112,3 +111,5 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 " highlight Normal ctermbg=255
 
 let g:rainbow_active=1
+autocmd FileType * setlocal formatoptions-=cro
+autocmd FileType make setlocal noexpandtab
