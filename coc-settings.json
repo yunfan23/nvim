@@ -11,5 +11,6 @@
         "UltiSnips",
         "~/.config/nvim/snippets"
     ],
+    "suggest.enablePreselect": false,
     "suggest.noselect": false
 }
