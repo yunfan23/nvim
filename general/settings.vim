@@ -52,7 +52,7 @@ set listchars=tab:>-,trail:-,nbsp:_
 set list
 set smartindent
 set shiftwidth=4
-set relativenumber
+" set relativenumber
 " Consistency
 set tabstop=4
 set softtabstop=4
@@ -63,7 +63,6 @@ set hls
 set encoding=utf8
 set incsearch
 set ic
-set number
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set nowrap                              " Display long lines as just one line
 set encoding=utf-8                      " The encoding displayed
@@ -79,7 +78,7 @@ set smarttab                            " Makes tabbing smarter will realize you
 set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
-set laststatus=0                        " Always display the status line
+set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
