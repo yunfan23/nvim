@@ -16,7 +16,7 @@ else
   source $HOME/.config/nvim/plug-config/signify.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
-  source $HOME/.config/nvim/plug-config/devicons.vim
+  " source $HOME/.config/nvim/plug-config/devicons.vim
   source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/nerdcommenter.vim
   source $HOME/.config/nvim/plug-config/nerdtree.vim

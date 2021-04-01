@@ -53,6 +53,6 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'preservim/tagbar'
 Plug 'crusoexia/vim-monokai'
 Plug 'luochen1990/rainbow'
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
