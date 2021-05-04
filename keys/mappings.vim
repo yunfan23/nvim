@@ -14,9 +14,9 @@ tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
 
 " Toggle terminal on/off (neovim)
-nnoremap <C-T> :call TermToggle(12)<CR>
-inoremap <C-T> <Esc>:call TermToggle(12)<CR>
-tnoremap <C-T> <C-\><C-n>:call TermToggle(12)<CR>
+" nnoremap <C-S-T> :call TermToggle(12)<CR>
+" inoremap <C-S-T> <Esc>:call TermToggle(12)<CR>
+" tnoremap <C-S-T> <C-\><C-n>:call TermToggle(12)<CR>
 
 map <F5> :call CompileRun()<CR>
 nmap <silent> <C-_> <Plug>(pydocstring)
