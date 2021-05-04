@@ -131,3 +131,43 @@ function work_in_progress() {
     echo "WIP!!"
   fi
 }
+
+alias lr='ls -lrth'
+alias b='cd ..'
+alias py='time python'
+alias pd='python -m pdb'
+alias cmake='/Applications/CMake.app/Contents/bin/cmake'
+alias vi='/usr/local/bin/nvim'
+alias h='history'
+alias ll='ls -l'
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+
+# Edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+
+export PROMPT="[%n@%F{green}%m%f] $PROMPT\$ "
+
+if [[ $TMUX != "" ]] then
+    export TERM="tmux-256color"
+else
+    export TERM="xterm-256color"
+fi
+
+export HISTSIZE=2000
+export HISTFILE="$HOME/.history"
+export SAVEHIST=$HISTSIZE
+setopt hist_ignore_all_dups
+setopt hist_ignore_space

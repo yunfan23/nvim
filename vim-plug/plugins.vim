@@ -17,7 +17,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'tpope/vim-commentary'
 Plug 'honza/vim-snippets'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
@@ -28,8 +27,10 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
+Plug 'tpope/vim-surround'
 Plug 'junegunn/gv.vim'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
