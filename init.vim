@@ -23,6 +23,7 @@ else
   source $HOME/.config/nvim/plug-config/indent.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   source $HOME/.config/nvim/plug-config/session.vim
+  source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/keys/which-key.vim

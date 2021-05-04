@@ -55,5 +55,6 @@ Plug 'luochen1990/rainbow'
 Plug 'ryanoasis/vim-devicons'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
