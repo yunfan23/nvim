@@ -56,5 +56,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'voldikss/vim-floaterm'
-
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'skanehira/preview-markdown.vim'
 call plug#end()
