@@ -56,6 +56,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'voldikss/vim-floaterm'
+" If you have nodejs and yarn
+Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'skanehira/preview-markdown.vim'

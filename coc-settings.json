@@ -1,5 +1,5 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": [],
+    "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
     "coc.preferences.jumpCommand": "drop",
     "python.linting.enabled": false,
     "python.linting.pylintEnabled": false,
