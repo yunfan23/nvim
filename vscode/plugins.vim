@@ -16,6 +16,5 @@ Plug 'tpope/vim-commentary'
 Plug 'machakann/vim-sandwich'
 Plug 'asvetliakov/vim-easymotion'
 Plug 'unblevable/quick-scope'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-surround'
 call plug#end()
