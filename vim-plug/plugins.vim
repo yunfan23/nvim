@@ -61,4 +61,6 @@ Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'skanehira/preview-markdown.vim'
+Plug 'machakann/vim-sandwich'
+Plug 'unblevable/quick-scope'
 call plug#end()

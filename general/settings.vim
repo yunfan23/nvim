@@ -52,7 +52,7 @@ set listchars=tab:>-,trail:-,nbsp:_
 set list
 set smartindent
 set shiftwidth=4
-" set relativenumber
+set relativenumber
 " Consistency
 set tabstop=4
 set softtabstop=4
