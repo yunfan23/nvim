@@ -65,4 +65,6 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'skanehira/preview-markdown.vim'
+Plug 'machakann/vim-sandwich'
+Plug 'unblevable/quick-scope'
 call plug#end()

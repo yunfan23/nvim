@@ -13,5 +13,8 @@ autocmd VimEnter *
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'tpope/vim-commentary'
-Plug 'easymotion/vim-easymotion'
+Plug 'machakann/vim-sandwich'
+Plug 'asvetliakov/vim-easymotion'
+Plug 'unblevable/quick-scope'
+Plug 'tpope/vim-surround'
 call plug#end()
