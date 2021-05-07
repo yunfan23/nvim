@@ -12,6 +12,11 @@ autocmd VimEnter *
   \| endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+Plug 'flazz/vim-colorschemes'
+Plug 'lepture/vim-jinja'
+Plug 'gko/vim-coloresque'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -56,8 +61,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'xolox/vim-session'
 Plug 'xolox/vim-misc'
 Plug 'voldikss/vim-floaterm'
-" If you have nodejs and yarn
-Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app && yarn install'}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'skanehira/preview-markdown.vim'
