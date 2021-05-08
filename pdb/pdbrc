@@ -1,0 +1,7 @@
+# Yunfan pdb rc file
+
+# alias settings
+alias i import inspect;print(inspect.getsource(%1))
+alias wtf !import traceback;traceback.print_exc()
+alias ppo pp %1.__dict__
+alias ppio pp [a.__dict__ for a in %1]

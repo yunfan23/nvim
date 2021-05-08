@@ -1,9 +1,6 @@
 "########################################
-""########################################
+" neovim init settings
 " author: yunfan
-" version: v1 17 Jun 2020
-"        : v2 15 Jul 2020
-"        : v3 17 Oct 2020
 "########################################
 syntax on
 filetype plugin indent on
@@ -11,7 +8,6 @@ filetype plugin indent on
 "########################################
 "" Settings
 "########################################
-"set cursorline
 hi cursorline cterm=none term=none
 hi cursorlinenr ctermfg=yellow term=none cterm=none
 " set line number to dark grey
@@ -25,6 +21,7 @@ if !exists('*ReloadVimrc')
         call setpos('.', save_cursor)
     endfun
 endif
+" auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 au! BufWritePost $MYVIMRC call ReloadVimrc()
 
 " access system clipboard
@@ -40,24 +37,19 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
-"########################################
-" Python
-"########################################
-" autopep8 setting
-au FileType python setlocal formatprg=autopep8\ -
+au BufNewFile,BufRead *.js, *.html, *.css
+    \set tabstop=2
+    \set softtabstop=2
+    \set shiftwidth=2
 
 " Minimal Config
 " display a tab as ">----"
 set listchars=tab:>-,trail:-,nbsp:_
 set list
 set smartindent
-set shiftwidth=4
 set relativenumber
 " Consistency
-set tabstop=4
-set softtabstop=4
-" improving backspace
-set backspace=indent,eol,start
+set backspace=indent,eol,start          " improving backspace
 set nocompatible
 set hls
 set encoding=utf8
@@ -92,7 +84,7 @@ set clipboard+=unnamed,unnamedplus       " Copy paste between vim and everything
 set t_Co=256
 set textwidth=79
 set colorcolumn=+1                      " highlight column after textwidth
-au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
+
 au BufWritePre * %s/\s\+$//e
 au BufRead * normal zR
 " Force writing in read-only mode
@@ -100,15 +92,10 @@ cmap w!! w !sudo tee %
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:rainbow_active=1
 
 colorscheme dracula
 
-let g:rainbow_active=1
 autocmd FileType * setlocal formatoptions-=cro
 " do not change tab to space when editing makefile
 autocmd FileType make setlocal noexpandtab
-
-" change font in GUI mode
-set guifont=Hack\ Nerd\ Font:h20
-" change line spacing in GUI mode
-set linespace=5

@@ -10,3 +10,5 @@ autocmd VimEnter *
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 map <C-n> :NERDTreeToggle<CR>
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
