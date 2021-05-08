@@ -7,7 +7,7 @@ pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
 
 
 class Config(pdb.DefaultConfig):
-    prompt = '(pdb) '
+    prompt = '(Pdb) '
     sticky_by_default = False
     editor = 'vi'
     filename_color = pdb.Color.lightgray

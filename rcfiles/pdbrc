@@ -1,7 +1,16 @@
 # Yunfan pdb rc file
 
 # alias settings
+# Print instance variables (usage "pi classInst")
+alias pi for k in %1.__dict__.keys(): print("%1.",k,"=",%1.__dict__[k])
+# Print instance variables in self
+alias ps pi self
+
 alias i import inspect;print(inspect.getsource(%1))
 alias wtf !import traceback;traceback.print_exc()
 alias ppo pp %1.__dict__
 alias ppio pp [a.__dict__ for a in %1]
+
+# append breakpoint to .pdbrc in current working directory
+# usage: bs lineno
+alias bs with open(".pdbrc", "a") as pdbrc: pdbrc.write("break " + __file__ + ":%1\n")
