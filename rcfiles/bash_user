@@ -1,19 +1,12 @@
-#!/usr/bin/bash
-
+# Aliases
 alias lr='ls -lrth'
 alias ll='ls -l'
 alias pd='python -m pdb'
 alias b='cd ..'
 alias h='history'
 alias so='source'
+alias vi='~/nvim/nightly/squashfs-root/usr/bin/nvim'
 
-# force tmux use 256 colors fixing the color issue in nvim
-alias tmux='tmux -2'
-alias vi='$HOME/nvim/nvim.appimage'
-
-# export PYTHONPATH=/usr/local/lib/python3.7/site-packages
-
-# Aliases
 alias g='git'
 alias gst='git status'
 alias gd='git diff'
@@ -56,9 +49,6 @@ alias grhh='git reset HEAD --hard'
 alias gclean='git reset --hard && git clean -dfx'
 alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
 
-#remove the gf alias
-#alias gf='git ls-files | grep'
-
 alias gpoat='git push origin --all && git push origin --tags'
 alias gmt='git mergetool --no-prompt'
 
@@ -94,7 +84,6 @@ alias gignored='git ls-files -v | grep "^[[:lower:]]"'
 # functions
 # Will return the current branch name
 # Usage example: git pull origin $(current_branch)
-#
 function current_branch() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || \
   ref=$(git rev-parse --short HEAD 2> /dev/null) || return
@@ -132,42 +121,6 @@ function work_in_progress() {
   fi
 }
 
-alias lr='ls -lrth'
-alias b='cd ..'
-alias py='time python'
-alias pd='python -m pdb'
-alias cmake='/Applications/CMake.app/Contents/bin/cmake'
-alias vi='/usr/local/bin/nvim'
-alias h='history'
-alias ll='ls -l'
-
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
-
-# Use vim keys in tab complete menu:
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-
-# Edit line in vim with ctrl-e:
-autoload edit-command-line; zle -N edit-command-line
-bindkey '^e' edit-command-line
-
-export PROMPT="[%n@%F{green}%m%f] $PROMPT\$ "
-
-if [[ $TMUX != "" ]] then
-    export TERM="tmux-256color"
-else
-    export TERM="xterm-256color"
-fi
-
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
 export SAVEHIST=$HISTSIZE
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
