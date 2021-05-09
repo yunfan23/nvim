@@ -29,6 +29,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
@@ -62,4 +63,13 @@ Plug 'xolox/vim-misc'
 Plug 'voldikss/vim-floaterm'
 Plug 'machakann/vim-sandwich'
 Plug 'unblevable/quick-scope'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+
+Plug 'lervag/vimtex'
+
+" TMUX
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
+Plug 'wellle/tmux-complete.vim'
 call plug#end()
