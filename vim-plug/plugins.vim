@@ -68,8 +68,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex'
 
 " TMUX
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
+Plug 'prabirshrestha/async.vim'
 Plug 'wellle/tmux-complete.vim'
 call plug#end()
