@@ -31,6 +31,3 @@ nmap <F8> :TagbarToggle<CR>
 
 " ctrl+s save in insert mode
 imap <C-s> <Esc>:w!<CR>i
-
-" ctrl+a select all and copy
-map <C-a> <Esc>ggVG
