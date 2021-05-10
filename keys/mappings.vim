@@ -26,6 +26,11 @@ nnoremap <Leader>q" ciW""<Esc>P
 nnoremap <Leader>q' ciW''<Esc>P
 nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 
-
 " tag bar
 nmap <F8> :TagbarToggle<CR>
+
+" ctrl+s save in insert mode
+imap <C-s> <Esc>:w!<CR>i
+
+" ctrl+a select all and copy
+map <C-a> <Esc>ggVG

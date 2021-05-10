@@ -73,6 +73,7 @@ set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
 set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
+" set cursorcolumn                        " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
@@ -80,7 +81,7 @@ set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
-set clipboard+=unnamed,unnamedplus       " Copy paste between vim and everything else
+set clipboard+=unnamed,unnamedplus      " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
 set colorcolumn=+1                      " highlight column after textwidth
