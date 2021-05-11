@@ -11,7 +11,7 @@ class Config(pdb.DefaultConfig):
     sticky_by_default = False
     editor = 'vi'
     filename_color = pdb.Color.lightgray
-    use_terminal256formatter = False
+    use_terminal256formatter = True
 
     def __init__(self):
         import readline
