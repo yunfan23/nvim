@@ -32,4 +32,3 @@ fi
 unset __conda_setup
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export TERM='xterm-256color'
-export PROMPT="$PROMPT\$ "
