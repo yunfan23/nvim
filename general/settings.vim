@@ -42,12 +42,19 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \set softtabstop=2
     \set shiftwidth=2
 
+set number relativenumber
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
+
 " Minimal Config
 " display a tab as ">----"
 set listchars=tab:>-,trail:-,nbsp:_
 set list
 set smartindent
-set relativenumber
 " Consistency
 set backspace=indent,eol,start          " improving backspace
 set nocompatible
@@ -71,7 +78,6 @@ set expandtab                           " Converts tabs to spaces
 set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
-set number                              " Line numbers
 set cursorline                          " Enable highlighting of the current line
 " set cursorcolumn                        " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
