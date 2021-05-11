@@ -3,7 +3,7 @@
 # initialize a new environment
 # author: Yunfan
 ##################################################
-declare -a files=("forgit.bash" "pylintrc" "pdbrc" "pdbrc.py" "bash_user" "tmux.conf")
+declare -a files=("zshrc" "zshrc_user" "forgit.bash" "pylintrc" "pdbrc" "pdbrc.py" "bash_user" "tmux.conf")
 echo "initializing..."
 for file in ${files[@]}
 do
