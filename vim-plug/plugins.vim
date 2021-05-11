@@ -64,11 +64,6 @@ Plug 'voldikss/vim-floaterm'
 Plug 'machakann/vim-sandwich'
 Plug 'unblevable/quick-scope'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-
 Plug 'lervag/vimtex'
 
-" TMUX
-Plug 'roxma/vim-tmux-clipboard'
-Plug 'prabirshrestha/async.vim'
-Plug 'wellle/tmux-complete.vim'
 call plug#end()
