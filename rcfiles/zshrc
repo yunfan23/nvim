@@ -1,5 +1,4 @@
 export ZSH="/home/yunfan/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 ZSH_THEME="dracula"
 plugins=(
     git
@@ -13,6 +12,7 @@ plugins=(
     catimg
     zsh_reload
 )
+source $ZSH/oh-my-zsh.sh
 if [ -f ~/.bash_user ]; then
     . ~/.bash_user
 fi
