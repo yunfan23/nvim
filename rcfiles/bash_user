@@ -22,3 +22,7 @@ function current_branch() {
 if [ -f ~/.forgit.bash ]; then
 . ~/.forgit.bash
 fi
+
+if [ -f ~/.config/nvim/rcfiles/z.sh ]; then
+. ~/.config/nvim/rcfiles/z.sh
+fi
