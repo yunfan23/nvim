@@ -106,3 +106,7 @@ colorscheme dracula
 autocmd FileType * setlocal formatoptions-=cro
 " do not change tab to space when editing makefile
 autocmd FileType make setlocal noexpandtab
+
+" Allows directory/project specific vimrc
+set exrc
+set secure
