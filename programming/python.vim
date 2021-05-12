@@ -30,7 +30,11 @@ func SetPythonTitle()
     call append(line(".")+5, "\# Created Time: ".strftime("%Y-%m-%d",localtime()))
     call append(line(".")+6, "")
     call append(line(".")+7, "")
+    normal!Godef run_main():
+    normal!opass
+    normal!o
+    normal!o
     normal!Goif '__main__' == __name__:
-    normal!omain()
+    normal!orun_main()
     normal!o
 endfunc
