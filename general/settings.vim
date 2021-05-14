@@ -90,7 +90,10 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set clipboard+=unnamed,unnamedplus      " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
-set colorcolumn=+1                      " highlight column after textwidth
+" set colorcolumn=+1                      " highlight column after textwidth
+" highlight the overlength
+highlight OverLength ctermbg=red ctermfg=white
+match OverLength /\%81v.\+/
 
 au BufWritePre * %s/\s\+$//e
 au BufRead * normal zR
@@ -110,3 +113,4 @@ autocmd FileType make setlocal noexpandtab
 " Allows directory/project specific vimrc
 set exrc
 set secure
+
