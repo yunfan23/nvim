@@ -15,7 +15,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'flazz/vim-colorschemes'
 Plug 'lepture/vim-jinja'
 Plug 'gko/vim-coloresque'
-Plug 'honza/vim-snippets'
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -42,6 +41,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-endwise'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
@@ -69,5 +69,8 @@ Plug 'godlygeek/tabular'
 Plug 'rking/ag.vim'
 Plug 'neomake/neomake'
 Plug 'scrooloose/syntastic'
+Plug 'sirver/ultisnips'
+Plug 'tpope/vim-endwise'
+Plug 'tomasr/molokai'
 
 call plug#end()
