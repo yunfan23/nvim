@@ -67,5 +67,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular'
 Plug 'rking/ag.vim'
+Plug 'neomake/neomake'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
