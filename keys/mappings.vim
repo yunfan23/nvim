@@ -27,7 +27,7 @@ nnoremap <Leader>q' ciW''<Esc>P
 nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 
 " tag bar
-nmap <F8> :TagbarToggle<CR>
+nnoremap <silent> <F10> :TagbarToggle<CR>
 
 " ctrl+s save in insert mode
 imap <C-s> <Esc>:w!<CR>i

@@ -28,6 +28,6 @@ else
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/keys/mappings.vim
-  source $HOME/.config/nvim/programming/python.vim
+  source $HOME/.config/nvim/ftplugin/python.vim
   source $HOME/.config/nvim/general/settings.vim
 endif

@@ -65,5 +65,7 @@ Plug 'machakann/vim-sandwich'
 Plug 'unblevable/quick-scope'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'lervag/vimtex'
+Plug 'godlygeek/tabular'
+Plug 'rking/ag.vim'
 
 call plug#end()
