@@ -104,8 +104,8 @@ cmap w!! w !sudo tee %
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:rainbow_active=1
 
-" colorscheme dracula
-colorscheme monokai
+colorscheme dracula
+" colorscheme monokai
 
 autocmd FileType * setlocal formatoptions-=cro
 " do not change tab to space when editing makefile
@@ -115,5 +115,5 @@ autocmd FileType make setlocal noexpandtab
 set exrc
 set secure
 
-let g:rehash256 = 1
+" let g:rehash256 = 1
 " let g:molokai_original = 1
