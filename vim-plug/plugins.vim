@@ -69,7 +69,6 @@ Plug 'godlygeek/tabular'
 Plug 'rking/ag.vim'
 Plug 'neomake/neomake'
 Plug 'scrooloose/syntastic'
-Plug 'sirver/ultisnips'
 Plug 'tpope/vim-endwise'
 Plug 'tomasr/molokai'
 
