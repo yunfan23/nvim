@@ -5,11 +5,15 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+" disable ale lsp
+let g:ale_disable_lsp = 1
+
 " Run PlugInstall if there are missing plugins
 autocmd VimEnter *
   \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \|   PlugInstall --sync | q
   \| endif
+
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'flazz/vim-colorschemes'
@@ -72,5 +76,7 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-endwise'
 Plug 'tomasr/molokai'
 Plug 'neovim/nvim-lspconfig'
+Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
+
 
 call plug#end()

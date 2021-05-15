@@ -2,5 +2,8 @@
     "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
     "coc.preferences.jumpCommand": "drop",
     "suggest.enablePreselect": false,
-    "suggest.noselect": false
+    "suggest.noselect": false,
+
+    // send coc diagnostic msg to ale
+    "diagnostic.displayByAle": true
 }
