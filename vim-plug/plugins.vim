@@ -72,6 +72,5 @@ Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-endwise'
 Plug 'tomasr/molokai'
 Plug 'neovim/nvim-lspconfig'
-Plug 'hrsh7th/nvim-compe'
 
 call plug#end()
