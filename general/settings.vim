@@ -96,7 +96,7 @@ highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.\+/
 
 au BufWritePre * %s/\s\+$//e
-au BufRead * normal zR
+" au BufRead * normal zR
 " Force writing in read-only mode
 cmap w!! w !sudo tee %
 
@@ -114,6 +114,8 @@ autocmd FileType make setlocal noexpandtab
 " Allows directory/project specific vimrc
 set exrc
 set secure
+set foldmethod=indent
+set nofoldenable
 
 " let g:rehash256 = 1
 " let g:molokai_original = 1
