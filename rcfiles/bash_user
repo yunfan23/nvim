@@ -27,3 +27,6 @@ fi
 if [ -f ~/.config/nvim/rcfiles/z.sh ]; then
 . ~/.config/nvim/rcfiles/z.sh
 fi
+
+alias ssh03='ssh -N -f -L localhost:6006:localhost:6006 -p 22 yunfan@ntu-03'
+
