@@ -15,8 +15,6 @@ au BufNewFile,BufRead *.py
     \set autoindent
     \set fileformat=unix
 
-au FileType python map <silent> <leader>b oimport pdb; pdb.set_trace()<esc>
-au FileType python map <silent> <leader>B Oimport pdb; pdb.set_trace()<esc>
 
 " Python Auto insert
 autocmd BufNewFile *py :call SetPythonTitle()
@@ -30,11 +28,11 @@ func SetPythonTitle()
     call append(line(".")+5, "\# Created Time: ".strftime("%Y-%m-%d",localtime()))
     call append(line(".")+6, "")
     call append(line(".")+7, "")
-    normal!Godef run_main():
-    normal!opass
-    normal!o
-    normal!o
-    normal!Goif '__main__' == __name__:
-    normal!orun_main()
-    normal!o
+    " normal!Godef run_main():
+    " normal!opass
+    " normal!o
+    " normal!o
+    " normal!Goif '__main__' == __name__:
+    " normal!orun_main()
+    " normal!o
 endfunc

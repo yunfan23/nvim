@@ -2,6 +2,7 @@
 alias lr='ls -lrth'
 alias ll='ls -l'
 alias pd='python -m pdb'
+alias py='python'
 alias b='cd ..'
 alias h='history'
 alias so='source'

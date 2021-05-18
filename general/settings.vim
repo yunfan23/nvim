@@ -107,7 +107,7 @@ let g:rainbow_active=1
 colorscheme dracula
 " colorscheme monokai
 
-autocmd FileType * setlocal formatoptions-=cro
+autocmd FileType * setlocal formatoptions-=tcro
 " do not change tab to space when editing makefile
 autocmd FileType make setlocal noexpandtab
 

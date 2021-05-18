@@ -26,6 +26,8 @@ else
   source $HOME/.config/nvim/plug-config/session.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/syntastic.vim
+  source $HOME/.config/nvim/plug-config/snip.vim
+  source $HOME/.config/nvim/plug-config/tex.vim
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/keys/which-key.vim

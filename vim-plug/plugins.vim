@@ -24,7 +24,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'honza/vim-snippets'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
@@ -75,6 +74,6 @@ Plug 'tpope/vim-endwise'
 Plug 'tomasr/molokai'
 Plug 'neovim/nvim-lspconfig'
 Plug 'Shougo/denite.nvim', { 'do': ':UpdateRemotePlugins' }
-
+Plug 'sirver/ultisnips'
 
 call plug#end()
