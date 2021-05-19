@@ -16,28 +16,29 @@ autocmd VimEnter *
 
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-Plug 'flazz/vim-colorschemes'
-Plug 'lepture/vim-jinja'
+" auto recognize color
 Plug 'gko/vim-coloresque'
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
+" display tags of current file
 Plug 'preservim/tagbar'
 Plug 'jistr/vim-nerdtree-tabs'
+" A git commit browser.
 Plug 'junegunn/gv.vim'
+" zen mode of vim
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
-Plug 'mhinz/vim-signify'
 Plug 'airblade/vim-gitgutter'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'
@@ -46,26 +47,23 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-obsession'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
 " Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
-Plug 'rbgrouleff/bclose.vim'
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'unblevable/quick-scope'
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'mileszs/ack.vim'
+Plug 'rking/ag.vim'
 Plug 'luochen1990/rainbow'
 Plug 'ryanoasis/vim-devicons'
-Plug 'xolox/vim-session'
-Plug 'xolox/vim-misc'
 Plug 'voldikss/vim-floaterm'
 Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular'
-Plug 'rking/ag.vim'
 Plug 'neomake/neomake'
-Plug 'neovim/nvim-lspconfig'
+" neovim lsp support
+" Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
 
 call plug#end()

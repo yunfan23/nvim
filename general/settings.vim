@@ -94,7 +94,6 @@ highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.\+/
 
 au BufWritePre * %s/\s\+$//e
-" au BufRead * normal zR
 " Force writing in read-only mode
 cmap w!! w !sudo tee %
 
@@ -102,11 +101,8 @@ cmap w!! w !sudo tee %
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:rainbow_active=1
 
-colorscheme dracula
-
-autocmd FileType * setlocal formatoptions-=tcro
-" do not change tab to space when editing makefile
-autocmd FileType make setlocal noexpandtab
+" disable auto insert commenter
+au BufEnter * set fo-=c fo-=r fo-=o fo-=t
 
 " Allows directory/project specific vimrc
 set exrc
@@ -114,5 +110,4 @@ set secure
 set foldmethod=indent
 set nofoldenable
 
-" let g:rehash256 = 1
-" let g:molokai_original = 1
+colorscheme dracula

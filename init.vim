@@ -13,14 +13,12 @@ else
   source $HOME/.config/nvim/vim-plug/plugins.vim
   " source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/coc.vim
-  source $HOME/.config/nvim/plug-config/signify.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/devicons.vim
   source $HOME/.config/nvim/plug-config/nerdcommenter.vim
   source $HOME/.config/nvim/plug-config/nerdtree.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
-  source $HOME/.config/nvim/plug-config/session.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/snip.vim
   source $HOME/.config/nvim/plug-config/tex.vim
