@@ -11,20 +11,17 @@ if exists('g:vscode')
   source $HOME/.config/nvim/vscode/keymappings.vim
 else
   source $HOME/.config/nvim/vim-plug/plugins.vim
+  " source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/coc.vim
-  " source $HOME/.config/nvim/plug-config/lsp.vim
   source $HOME/.config/nvim/plug-config/signify.vim
   source $HOME/.config/nvim/plug-config/easymotion.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/devicons.vim
-  source $HOME/.config/nvim/plug-config/ale.vim
   source $HOME/.config/nvim/plug-config/nerdcommenter.vim
   source $HOME/.config/nvim/plug-config/nerdtree.vim
-  source $HOME/.config/nvim/plug-config/indent.vim
   source $HOME/.config/nvim/plug-config/fzf.vim
   source $HOME/.config/nvim/plug-config/session.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
-  source $HOME/.config/nvim/plug-config/syntastic.vim
   source $HOME/.config/nvim/plug-config/snip.vim
   source $HOME/.config/nvim/plug-config/tex.vim
   source $HOME/.config/nvim/themes/airline.vim

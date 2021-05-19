@@ -27,7 +27,10 @@ nnoremap <Leader>q' ciW''<Esc>P
 nnoremap <Leader>qd daW"=substitute(@@,"'\\\|\"","","g")<CR>P
 
 " tag bar
-nnoremap <silent> <F10> :TagbarToggle<CR>
+nnoremap <Leader>t :TagbarToggle<CR>
 
 " ctrl+s save in insert mode
 imap <C-s> <Esc>:w!<CR>i
+
+" use ctrl + e to list buffers
+nnoremap <C-e> :set nomore <Bar> :ls <Bar> :set more <CR>:b<Space>

@@ -1,11 +1,8 @@
 let g:coc_global_extensions = [
     \ 'coc-prettier',
-    \ 'coc-snippets',
     \ 'coc-actions',
-    \ 'coc-pairs',
-    \ 'coc-python',
     \ 'coc-pyright',
-    \ 'coc-vimlsp',
+    \ 'coc-ultisnips',
     \ 'coc-json',
     \ ]
 
@@ -51,17 +48,15 @@ endif
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> [g <Plug>(coc-diagnostic-prev-error)
+nmap <silent> ]g <Plug>(coc-diagnostic-next-error)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
-
 nmap <silent> gs :call CocAction('jumpDefinition', 'vsplit')<CR>
-nmap <silent> gt :call CocAction('jumpDefinition', 'tabe')<CR>
 
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>

@@ -1,9 +1,18 @@
 {
-    "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
-    "coc.preferences.jumpCommand": "drop",
-    "suggest.enablePreselect": false,
-    "suggest.noselect": false,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
+  "coc.preferences.jumpCommand": "drop",
+  "suggest.enablePreselect": true,
+  "suggest.noselect": false, // auto select the first item from auto complete preview
+  "python.pythonPath": "python",
 
-    // send coc diagnostic msg to ale
-    "diagnostic.displayByAle": true
+  // send coc diagnostic msg to ale
+  // "diagnostic.displayByAle": true
+
+  "python.linting.enabled": true,
+  "python.linting.flake8Enabled": true,
+  // ignore unused import F401
+  // ignore line too long E501
+  // ignore line break after binary operator
+  // ignore local variable is assigned to but never used
+  "python.linting.flake8Args": ["--ignore=F401, F841, E501, W504"]
 }

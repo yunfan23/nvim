@@ -10,6 +10,7 @@ alias vi='~/nvim/nightly/squashfs-root/usr/bin/nvim'
 alias gp='git push'
 alias gcmsg='git commit -m'
 alias ggpush='git push origin $(current_branch)'
+alias ssh03='ssh -N -f -L localhost:6006:localhost:6006 -p 22 yunfan@ntu-03'
 
 # functions
 # Will return the current branch name
@@ -28,5 +29,18 @@ if [ -f ~/.config/nvim/rcfiles/z.sh ]; then
 . ~/.config/nvim/rcfiles/z.sh
 fi
 
-alias ssh03='ssh -N -f -L localhost:6006:localhost:6006 -p 22 yunfan@ntu-03'
-
+# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
+export FZF_DEFAULT_COMMAND='rg --files'
+export FZF_DEFAULT_OPTS="
+--layout=reverse
+--info=inline
+--height=80%
+--multi
+--preview '([[ -f {}  ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {}  ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+--color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
+--bind '?:toggle-preview'
+--bind 'ctrl-a:select-all'
+--bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+--bind 'ctrl-e:execute(echo {+} | xargs -o vi)'
+--bind 'ctrl-v:execute(code {+})'
+"

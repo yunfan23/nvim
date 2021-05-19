@@ -43,7 +43,6 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \set shiftwidth=2
 
 set number relativenumber
-
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,WinEnter,FocusGained,InsertLeave * set relativenumber
@@ -81,7 +80,6 @@ set laststatus=2                        " Always display the status line
 set cursorline                          " Enable highlighting of the current line
 " set cursorcolumn                        " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
-set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
@@ -105,7 +103,6 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 let g:rainbow_active=1
 
 colorscheme dracula
-" colorscheme monokai
 
 autocmd FileType * setlocal formatoptions-=tcro
 " do not change tab to space when editing makefile

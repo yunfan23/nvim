@@ -1,0 +1,14 @@
+{
+  "reportTypeshedErrors": true,
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "reportUntypedFunctionDecorator": true,
+  "reportUntypedClassDecorator": true,
+  "reportUnusedImport": false,
+  "reportGeneralTypeIssues": false,
+  "reportUnusedVariable": false,
+  "reportUnusedFunction": false,
+
+  "venvPath": "/home/yunfan/miniconda3/envs/",
+  "venv": "sparenet"
+}
