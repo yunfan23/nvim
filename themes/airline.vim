@@ -8,3 +8,7 @@ let g:airline_right_sep = ''
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
+
+" Just show the filename (no path) in the tab
+let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline_section_c = '%t'

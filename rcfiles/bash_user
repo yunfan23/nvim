@@ -29,8 +29,7 @@ if [ -f ~/.config/nvim/rcfiles/z.sh ]; then
 . ~/.config/nvim/rcfiles/z.sh
 fi
 
-# export FZF_DEFAULT_COMMAND='fd --type f --hidden --follow --exclude .git'
-export FZF_DEFAULT_COMMAND='rg --files'
+# export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_DEFAULT_OPTS="
 --layout=reverse
 --info=inline

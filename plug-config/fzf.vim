@@ -24,7 +24,6 @@ let g:fzf_preview_window = 'right:50%'
 let g:fzf_tags_command = 'ctags -R'
 " Border color
 let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
-let $FZF_DEFAULT_OPTS = '--layout=reverse --inline-info'
 
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
@@ -41,3 +40,22 @@ let g:fzf_colors =
   \ 'marker':  ['fg', 'Keyword'],
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
+
+" Tell FZF to use RG - so we can skip .gitignore files even if not using
+let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
+" If you want gitignored files:
+"let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore-vcs --hidden'
+
+let $FZF_DEFAULT_OPTS="
+      \ --layout=reverse
+      \ --info=inline
+      \ --height=80%
+      \ --multi
+      \ --preview '([[ -f {}  ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {}  ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
+      \ --color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
+      \ --bind '?:toggle-preview'
+      \ --bind 'ctrl-a:select-all'
+      \ --bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
+      \ --bind 'ctrl-e:execute(echo {+} | xargs -o vi)'
+      \ --bind 'ctrl-v:execute(code {+})'
+      \ "
