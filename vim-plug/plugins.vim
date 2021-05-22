@@ -65,6 +65,7 @@ Plug 'neomake/neomake'
 " neovim lsp support
 " Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
+Plug 'morhetz/gruvbox'
 
 " telescope
 Plug 'nvim-lua/popup.nvim'
