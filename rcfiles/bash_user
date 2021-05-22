@@ -29,17 +29,13 @@ if [ -f ~/.config/nvim/rcfiles/z.sh ]; then
 . ~/.config/nvim/rcfiles/z.sh
 fi
 
-# export FZF_DEFAULT_COMMAND='rg --files'
-export FZF_DEFAULT_OPTS="
---layout=reverse
---info=inline
---height=80%
---multi
---preview '([[ -f {}  ]] && (bat --style=numbers --color=always {} || cat {})) || ([[ -d {}  ]] && (tree -C {} | less)) || echo {} 2> /dev/null | head -200'
---color='hl:148,hl+:154,pointer:032,marker:010,bg+:237,gutter:008'
---bind '?:toggle-preview'
---bind 'ctrl-a:select-all'
---bind 'ctrl-y:execute-silent(echo {+} | pbcopy)'
---bind 'ctrl-e:execute(echo {+} | xargs -o vi)'
---bind 'ctrl-v:execute(code {+})'
-"
+#" Tell FZF to use RG - so we can skip .gitignore files even if not using
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
+FZF_OPTIONS=""
+FZF_OPTIONS+="--layout=reverse "
+FZF_OPTIONS+="--info=inline "
+FZF_OPTIONS+="--height=80% "
+FZF_OPTIONS+="--multi "
+FZF_OPTIONS+="--preview 'cat {}' "
+FZF_OPTIONS+="--bind '?:toggle-preview' "
+export FZF_DEFAULT_OPTS=$FZF_OPTIONS

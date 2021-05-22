@@ -66,4 +66,9 @@ Plug 'neomake/neomake'
 " Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
 
+" telescope
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 call plug#end()

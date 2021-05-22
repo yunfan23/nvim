@@ -2,8 +2,11 @@
 " Python
 "########################################
 
-" autopep8 setting
-au FileType python setlocal formatprg=autopep8\ -
+" formatter setting
+au FileType python setlocal formatprg=yapf\ -
+
+" open tagbar on opening
+au FileType python TagbarOpen()
 
 " associate with file type
 au BufNewFile,BufRead *.py
@@ -14,7 +17,6 @@ au BufNewFile,BufRead *.py
     \set expandtab
     \set autoindent
     \set fileformat=unix
-
 
 " Python Auto insert
 autocmd BufNewFile *py :call SetPythonTitle()
@@ -37,13 +39,10 @@ func SetPythonTitle()
     " normal!o
 endfunc
 
-" Additions to Vim's filetype plugin for Python, to set up PyUnit as
-" the 'compiler' for Python files.
-
 " Set the errorformat.
 compiler pyunit
 
 " Set 'makeprg': this allows you to call :make on any .py file and
 " run all of the unit tests in the current working directory.
 " Ensure you have this file.
-setlocal makeprg=${HOME}/.config/nvim/ftplugin/alltests.py
+"setlocal makeprg=${HOME}/.config/nvim/ftplugin/alltests.py

@@ -21,3 +21,5 @@ fi
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 export PROMPT="$PROMPT\$ "
+
+bindkey -s '^e' 'vi $(fzf)\n'

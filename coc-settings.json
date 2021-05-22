@@ -10,9 +10,14 @@
 
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
+  "diagnostic.hintSign": "",
   // ignore unused import F401
   // ignore line too long E501
   // ignore line break after binary operator
   // ignore local variable is assigned to but never used
-  "python.linting.flake8Args": ["--ignore=F401, F841, E501, W504"]
+  // ignore multiple blank space before an operator
+  "python.linting.flake8Args": [
+    "--ignore=F401,F841,E501,E221,W504"
+  ],
+  "clangd.path": "/home/yunfan/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
 }

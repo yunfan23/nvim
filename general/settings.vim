@@ -88,12 +88,12 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set clipboard+=unnamed,unnamedplus      " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
-" set colorcolumn=+1                      " highlight column after textwidth
+set colorcolumn=+1                      " highlight column after textwidth
+
 " highlight the overlength
 highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%81v.\+/
 
-au BufWritePre * %s/\s\+$//e
 " Force writing in read-only mode
 cmap w!! w !sudo tee %
 
@@ -103,11 +103,16 @@ let g:rainbow_active=1
 
 " disable auto insert commenter
 au BufEnter * set fo-=c fo-=r fo-=o fo-=t
-
+" auto remove training space
+autocmd BufWritePre * %s/\s\+$//e
 " Allows directory/project specific vimrc
 set exrc
 set secure
 set foldmethod=indent
 set nofoldenable
 
+set ssop-=options    " do not store global and local values in a session
+set ssop-=folds      " do not store folds
+
 colorscheme dracula
+

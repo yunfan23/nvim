@@ -4,6 +4,7 @@ let g:coc_global_extensions = [
     \ 'coc-pyright',
     \ 'coc-ultisnips',
     \ 'coc-json',
+    \ 'coc-clangd',
     \ ]
 
 " Give more space for displaying messages.
@@ -54,7 +55,6 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next-error)
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> gs :call CocAction('jumpDefinition', 'vsplit')<CR>
 
@@ -137,3 +137,8 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" always show the signcolumn
+autocmd BufRead,BufNewFile * setlocal signcolumn=yes
+" remove the color from the signColumn
+autocmd BufRead,BufNewFile * highlight clear SignColumn

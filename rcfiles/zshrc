@@ -13,12 +13,9 @@ plugins=(
     zsh_reload
 )
 source $ZSH/oh-my-zsh.sh
-if [ -f ~/.bash_user ]; then
-    . ~/.bash_user
-fi
-if [ -f ~/.zshrc_user ]; then
-    . ~/.zshrc_user
-fi
+[ -f ~/.bash_user ] && . ~/.bash_user
+[ -f ~/.zshrc_user ] && . ~/.zshrc_user
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 __conda_setup="$('/home/yunfan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
@@ -30,8 +27,10 @@ else
     fi
 fi
 unset __conda_setup
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export TERM='xterm-256color'
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+#cuda settings
+export CUDA_HOME=/usr/local/cuda
+export PATH=${CUDA_HOME}/bin:${PATH}
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
