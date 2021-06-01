@@ -11,9 +11,6 @@ inoremap ZZ <Esc>:wqa<CR>
 tnoremap <Esc> <C-\><C-n>
 tnoremap :q! <C-\><C-n>:q!<CR>
 
-" tag bar
-nnoremap <Leader>t :TagbarToggle<CR>
-
 " ctrl+s save in insert mode
 imap <C-s> <Esc>:w!<CR>i
 
@@ -35,3 +32,12 @@ inoremap SS <Esc>S
 inoremap DD <Esc>dd
 " undo
 inoremap UU <Esc>u
+
+" 自动打开 quickfix window ，高度为 6
+let g:asyncrun_open = 6
+
+" 任务结束时候响铃提醒
+let g:asyncrun_bell = 1
+
+" 设置 F10 打开/关闭 Quickfix 窗口
+nnoremap <F10> :call asyncrun#quickfix_toggle(6)<cr>

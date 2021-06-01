@@ -120,3 +120,4 @@ let g:gruvbox_italic=1
 colorscheme gruvbox
 "colorscheme dracula
 
+let g:sneak#label = 1

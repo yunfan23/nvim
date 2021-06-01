@@ -25,9 +25,10 @@ Plug 'vim-airline/vim-airline'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
-Plug 'preservim/nerdcommenter'
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 " display tags of current file
 Plug 'preservim/tagbar'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'jistr/vim-nerdtree-tabs'
 " A git commit browser.
 Plug 'junegunn/gv.vim'
@@ -38,6 +39,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
+Plug 'mhinz/vim-signify'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
@@ -48,10 +50,11 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-projectionist'
 Plug 'kassio/neoterm'
 Plug 'benmills/vimux'
 Plug 'mhinz/vim-startify'
-" Plug 'dense-analysis/ale'
+Plug 'dense-analysis/ale'
 Plug 'sheerun/vim-polyglot'
 Plug 'unblevable/quick-scope'
 Plug 'mileszs/ack.vim'
@@ -66,10 +69,20 @@ Plug 'neomake/neomake'
 " Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
 Plug 'morhetz/gruvbox'
+Plug 'justinmk/vim-sneak'
+Plug 'justinmk/vim-dirvish'
 
 " telescope
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'skywind3000/asyncrun.vim'
+
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-syntax'
+Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
+Plug 'sgur/vim-textobj-parameter'
 
 call plug#end()

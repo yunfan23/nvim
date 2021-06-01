@@ -2,7 +2,6 @@ let g:coc_global_extensions = [
     \ 'coc-prettier',
     \ 'coc-actions',
     \ 'coc-pyright',
-    \ 'coc-ultisnips',
     \ 'coc-json',
     \ 'coc-clangd',
     \ ]
