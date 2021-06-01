@@ -11,8 +11,7 @@ else
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/keys/which-key.vim
   source $HOME/.config/nvim/keys/mappings.vim
-  source $HOME/.config/nvim/ftplugin/python.vim
-  source $HOME/.config/nvim/ftplugin/cpp.vim
+  source $HOME/.config/nvim/ftplugin/all.vim
   source $HOME/.config/nvim/general/functions.vim
   source $HOME/.config/nvim/general/settings.vim
 endif

@@ -6,7 +6,7 @@
   "python.pythonPath": "python",
 
   // send coc diagnostic msg to ale
-  // "diagnostic.displayByAle": true
+  // "diagnostic.displayByAle": true,
 
   "python.linting.enabled": true,
   "python.linting.flake8Enabled": true,
@@ -18,6 +18,5 @@
   // ignore multiple blank space before an operator
   "python.linting.flake8Args": [
     "--ignore=F401,F841,E501,E221,W504"
-  ],
-  "clangd.path": "/home/yunfan/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"
+  ]
 }

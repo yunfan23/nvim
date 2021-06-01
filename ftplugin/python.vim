@@ -6,7 +6,7 @@
 au FileType python setlocal formatprg=yapf\ -
 
 " open tagbar on opening
-au FileType python TagbarOpen()
+" au FileType python TagbarOpen()
 
 " associate with file type
 au BufNewFile,BufRead *.py
@@ -46,3 +46,16 @@ compiler pyunit
 " run all of the unit tests in the current working directory.
 " Ensure you have this file.
 "setlocal makeprg=${HOME}/.config/nvim/ftplugin/alltests.py
+
+let b:ale_disable_lsp = 1
+" Check Python files with flake8
+let b:ale_linters = ['flake8']
+let b:ale_linters_ignore = ['pyright']
+" Fix Python files with autopep8 and yapf.
+let b:ale_fixers = [
+\   'remove_trailing_lines',
+\   'isort',
+\   'ale#fixers#generic_python#BreakUpLongLines',
+\   'autopep8',
+\   'yapf',
+\]

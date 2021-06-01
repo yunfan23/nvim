@@ -26,8 +26,6 @@ Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
-" display tags of current file
-Plug 'preservim/tagbar'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'jistr/vim-nerdtree-tabs'
 " A git commit browser.
@@ -84,5 +82,6 @@ Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-syntax'
 Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
+Plug 'liuchengxu/vista.vim'
 
 call plug#end()
