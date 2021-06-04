@@ -3,7 +3,7 @@
 "########################################
 
 " formatter setting
-au FileType python setlocal formatprg=yapf\ -
+au FileType python setlocal formatprg=autopep8\ -
 
 " open tagbar on opening
 " au FileType python TagbarOpen()

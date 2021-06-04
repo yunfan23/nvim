@@ -49,3 +49,4 @@ noremap <leader>p :Autoformat<cr>
 
 nnoremap <leader>sr :call LoadSession()<CR>
 nnoremap <leader>ss :call MakeSession()<CR>
+nnoremap <silent><nowait> <space>v  :Vista!!<CR>
