@@ -121,3 +121,11 @@ colorscheme gruvbox
 "colorscheme dracula
 
 let g:sneak#label = 1
+
+" change font in gui mode
+if has('gui_running')
+  set guifont=Hack\ Nerd\ Font:h20
+endif
+
+set ssop-=curdir
+set ssop+=sesdir

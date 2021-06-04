@@ -46,3 +46,6 @@ inoremap <leader>w <Esc>:w<cr>
 noremap <leader>w :w<cr>
 noremap <leader>q :qa!<cr>
 noremap <leader>p :Autoformat<cr>
+
+nnoremap <leader>sr :call LoadSession()<CR>
+nnoremap <leader>ss :call MakeSession()<CR>

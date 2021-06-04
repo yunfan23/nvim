@@ -9,6 +9,8 @@ source $HOME/.config/nvim/vim-plug/floaterm.vim
 source $HOME/.config/nvim/vim-plug/snip.vim
 source $HOME/.config/nvim/vim-plug/tex.vim
 source $HOME/.config/nvim/vim-plug/tagbar.vim
-source $HOME/.config/nvim/vim-plug/telescope.vim
 source $HOME/.config/nvim/vim-plug/asyncrun.vim
 source $HOME/.config/nvim/vim-plug/leaderf.vim
+if has("nvim")
+  source $HOME/.config/nvim/vim-plug/telescope.vim
+endif

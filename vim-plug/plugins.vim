@@ -71,9 +71,11 @@ Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 
 " telescope
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+if has("nvim")
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+endif
 
 Plug 'skywind3000/asyncrun.vim'
 

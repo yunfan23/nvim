@@ -18,7 +18,7 @@ function! TermToggle(height)
         endtry
         startinsert!
         let g:term_win = win_getid()
-        let &t_SI = "<Esc>[5 q"                                                     
+        let &t_SI = "<Esc>[5 q"
         let &t_EI = "<Esc>[3 q"
     endif
 endfunction
@@ -48,3 +48,24 @@ func! CompileRun()
                 exec "!firefox %.html &"
         endif
 endfunc
+
+function! MakeSession()
+  " let b:sessiondir = $HOME . "/.config/nvim/sessions/" . getcwd()
+  let b:sessiondir = $HOME . "/.config/nvim/sessions/"
+  if (filewritable(b:sessiondir) != 2)
+    exe 'silent !mkdir -p ' b:sessiondir
+    redraw!
+  endif
+  let b:filename = b:sessiondir . '/session.vim'
+  exe "mksession! " . b:filename
+endfunction
+
+function! LoadSession()
+  let b:sessiondir = $HOME . "/.config/nvim/sessions/"
+  let b:sessionfile = b:sessiondir . "/session.vim"
+  if (filereadable(b:sessionfile))
+    exe 'source ' b:sessionfile
+  else
+    echo "No session loaded."
+  endif
+endfunction

@@ -141,3 +141,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 autocmd BufRead,BufNewFile * setlocal signcolumn=yes
 " remove the color from the signColumn
 autocmd BufRead,BufNewFile * highlight clear SignColumn
+
+let g:coc_disable_startup_warning = 1
