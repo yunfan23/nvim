@@ -115,10 +115,7 @@ set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
 
 set termguicolors
-" enable italic in gruvbox mode
-let g:gruvbox_italic=1
-colorscheme gruvbox
-"colorscheme dracula
+colorscheme dracula
 
 let g:sneak#label = 1
 

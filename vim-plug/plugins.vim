@@ -62,11 +62,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
 Plug 'lervag/vimtex'
 Plug 'godlygeek/tabular'
-Plug 'neomake/neomake'
-" neovim lsp support
-" Plug 'neovim/nvim-lspconfig'
 Plug 'sirver/ultisnips'
-Plug 'morhetz/gruvbox'
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 
