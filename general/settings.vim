@@ -78,7 +78,6 @@ set smartindent                         " Makes indenting smart
 set autoindent                          " Good auto indent
 set laststatus=2                        " Always display the status line
 set cursorline                          " Enable highlighting of the current line
-" set cursorcolumn                        " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
 set nobackup                            " This is recommended by coc
@@ -88,14 +87,7 @@ set timeoutlen=500                      " By default timeoutlen is 1000 ms
 set clipboard+=unnamed,unnamedplus      " Copy paste between vim and everything else
 set t_Co=256
 set textwidth=79
-set colorcolumn=+1                      " highlight column after textwidth
-
-" highlight the overlength
-highlight OverLength ctermbg=red ctermfg=white
-match OverLength /\%81v.\+/
-
-" Force writing in read-only mode
-cmap w!! w !sudo tee %
+" set colorcolumn=+1                      " highlight column after textwidth
 
 " Trigger a highlight in the appropriate direction when pressing these keys:
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -111,9 +103,6 @@ set secure
 set foldmethod=indent
 set nofoldenable
 
-set ssop-=options    " do not store global and local values in a session
-set ssop-=folds      " do not store folds
-
 set termguicolors
 colorscheme dracula
 
@@ -124,5 +113,7 @@ if has('gui_running')
   set guifont=Hack\ Nerd\ Font:h20
 endif
 
+set ssop-=options    " do not store global and local values in a session
+set ssop-=folds      " do not store folds
 set ssop-=curdir
 set ssop+=sesdir

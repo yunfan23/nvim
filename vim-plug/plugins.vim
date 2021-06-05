@@ -65,6 +65,7 @@ Plug 'godlygeek/tabular'
 Plug 'sirver/ultisnips'
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
+Plug 'Yggdroot/indentLine'
 
 " telescope
 if has("nvim")
