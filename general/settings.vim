@@ -27,9 +27,11 @@ au! BufWritePost $MYVIMRC call ReloadVimrc()
 " access system clipboard
 vmap '' :w !pbcopy<CR><CR>
 
-" change cursor in insert and normal mode
-let &t_SI = "<Esc>[5 q"
-let &t_EI = "<Esc>[3 q"
+if has("nvim")
+  " change cursor in insert and normal mode
+  let &t_SI = "<Esc>[5 q"
+  let &t_EI = "<Esc>[3 q"
+endif
 
 " Return to last edit position when opening files
 autocmd BufReadPost *

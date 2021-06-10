@@ -5,6 +5,14 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+if !has('nvim')
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'ycm-core/YouCompleteMe'
+call vundle#end()
+endif
+
+
 " disable ale lsp
 let g:ale_disable_lsp = 1
 
@@ -20,7 +28,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'gko/vim-coloresque'
 Plug 'liuchengxu/vim-which-key'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
@@ -34,7 +41,6 @@ Plug 'junegunn/gv.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-signify'
@@ -69,9 +75,14 @@ Plug 'Yggdroot/indentLine'
 
 " telescope
 if has("nvim")
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+endif
+if !has("nvim")
+  Plug 'sillybun/vim-repl'
 endif
 
 Plug 'skywind3000/asyncrun.vim'

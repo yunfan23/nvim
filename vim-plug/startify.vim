@@ -13,8 +13,8 @@ let g:startify_bookmarks = [
 let g:startify_session_autoload = 1
 let g:startify_session_delete_buffers = 1
 let g:startify_custom_header = [
-        \ '   _  __      _      ',
-        \ '  / |/ /__ __(_)_ _  ',
-        \ ' /    /| |/ / /  ` \ ',
-        \ '/_/|_/ |___/_/_/_/_/ ',
+        \ '       _      ',
+        \ ' __ __(_)_ _  ',
+        \ '| |/ / /  ` \ ',
+        \ '|___/_/_/_/_/ ',
         \]
