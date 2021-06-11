@@ -12,8 +12,9 @@ alias ggpush='git push origin $(current_branch)'
 alias ssh03='ssh -N -f -L localhost:6006:localhost:6006 -p 22 yunfan@ntu-03'
 alias mv='mv -i'
 alias nvim='~/nvim/nightly/squashfs-root/usr/bin/nvim'
-alias nvis='vi -S'
-alias vi='vim'
+alias n='~/nvim/nightly/squashfs-root/usr/bin/nvim'
+alias nvis='nvim -S'
+alias vi='/usr/local/bin/vim'
 
 # functions
 # Will return the current branch name

@@ -31,6 +31,10 @@ if has("nvim")
   " change cursor in insert and normal mode
   let &t_SI = "<Esc>[5 q"
   let &t_EI = "<Esc>[3 q"
+else
+  " change cursor in insert and normal mode
+  let &t_SI = "\e[6 q"
+  let &t_EI = "\e[2 q"
 endif
 
 " Return to last edit position when opening files
@@ -53,7 +57,8 @@ augroup END
 
 " Minimal Config
 " display a tab as ">----"
-set listchars=tab:>-,trail:-,nbsp:_
+" set listchars=tab:>-,trail:-,nbsp:_
+set listchars=trail:-,nbsp:_
 set list
 set smartindent
 " Consistency
