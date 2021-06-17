@@ -5,7 +5,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-if !has('nvim')
+if has('vim')
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'ycm-core/YouCompleteMe'
