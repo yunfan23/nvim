@@ -27,8 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " auto recognize color
 Plug 'gko/vim-coloresque'
 Plug 'liuchengxu/vim-which-key'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'vim-airline/vim-airline'
+Plug 'itchyny/lightline.vim'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
@@ -63,7 +62,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'unblevable/quick-scope'
 Plug 'mileszs/ack.vim'
 Plug 'rking/ag.vim'
-Plug 'luochen1990/rainbow'
 Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
 Plug 'lervag/vimtex'
@@ -93,5 +91,6 @@ Plug 'kana/vim-textobj-syntax'
 Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
 Plug 'liuchengxu/vista.vim'
+Plug 'phanviet/vim-monokai-pro'
 
 call plug#end()

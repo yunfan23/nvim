@@ -1,5 +1,5 @@
 [flake8]
-ignore = D203,F841,F401,E221,W504,E501
+ignore = D203,F841,F401,E221,W504,E501,E128,E251,E301,E231,E124,E261,E302,E265,E702
 exclude =
     # No need to traverse our git directory
     .git,

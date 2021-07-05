@@ -58,7 +58,7 @@ augroup END
 " Minimal Config
 " display a tab as ">----"
 " set listchars=tab:>-,trail:-,nbsp:_
-set listchars=trail:-,nbsp:_
+set listchars=tab:\ \ ,trail:-,nbsp:_
 set list
 set smartindent
 " Consistency
@@ -111,7 +111,10 @@ set foldmethod=indent
 set nofoldenable
 
 set termguicolors
-colorscheme dracula
+colorscheme monokai_pro
+let g:lightline = {
+      \ 'colorscheme': 'monokai_pro',
+      \ }
 
 let g:sneak#label = 1
 
