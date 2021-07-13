@@ -41,11 +41,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-" Tell FZF to use RG - so we can skip .gitignore files even if not using
-let $FZF_DEFAULT_COMMAND = 'rg --files --hidden'
-" If you want gitignored files:
-"let $FZF_DEFAULT_COMMAND = 'rg --files --no-ignore-vcs --hidden'
-
+let $FZF_DEFAULT_COMMAND = 'rg --files --follow --hidden'
 let $FZF_DEFAULT_OPTS="
       \ --layout=reverse
       \ --info=inline

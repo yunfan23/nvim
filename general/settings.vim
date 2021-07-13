@@ -112,10 +112,6 @@ set nofoldenable
 
 set termguicolors
 colorscheme monokai_pro
-let g:lightline = {
-      \ 'colorscheme': 'monokai_pro',
-      \ }
-
 let g:sneak#label = 1
 
 " change font in gui mode

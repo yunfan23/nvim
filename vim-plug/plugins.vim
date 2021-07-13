@@ -70,6 +70,7 @@ Plug 'sirver/ultisnips'
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 Plug 'Yggdroot/indentLine'
+Plug 'metakirby5/codi.vim'
 
 " telescope
 if has("nvim")
@@ -78,13 +79,20 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'iamcco/markdown-preview.nvim'
+  " Plug 'neovim/nvim-lspconfig'
+  " Plug 'kabouzeid/nvim-lspinstall'
+  " Plug 'glepnir/lspsaga.nvim'
+  Plug 'itchyny/vim-cursorword'
+  Plug 'hrsh7th/nvim-compe'
+  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 endif
 if !has("nvim")
   Plug 'sillybun/vim-repl'
 endif
 
 Plug 'skywind3000/asyncrun.vim'
-
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-indent'
 Plug 'kana/vim-textobj-syntax'

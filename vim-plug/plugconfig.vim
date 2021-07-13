@@ -16,6 +16,7 @@ source $HOME/.config/nvim/vim-plug/lightline.vim
 if has("nvim")
   source $HOME/.config/nvim/vim-plug/telescope.vim
   source $HOME/.config/nvim/vim-plug/coc.vim
+  " source $HOME/.config/nvim/vim-plug/lsp.vim
 else
   source $HOME/.config/nvim/vim-plug/repl.vim
   source $HOME/.config/nvim/vim-plug/ycm.vim
