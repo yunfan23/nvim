@@ -27,7 +27,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " auto recognize color
 Plug 'gko/vim-coloresque'
 Plug 'liuchengxu/vim-which-key'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
