@@ -40,11 +40,7 @@ nnoremap <F10> :call asyncrun#quickfix_toggle(6)<cr>
 inoremap <leader>w <Esc>:w<cr>
 noremap <leader>w :w<cr>
 noremap <leader>q :qa!<cr>
-<<<<<<< Updated upstream
-
 nnoremap <leader>sr :call LoadSession()<CR>
 nnoremap <leader>ss :call MakeSession()<CR>
-=======
 noremap <leader>p :Autoformat<cr>
->>>>>>> Stashed changes
 nnoremap <silent><nowait> <space>v  :Vista!!<CR>
