@@ -3,7 +3,6 @@ ZSH_THEME="dracula"
 plugins=(
     git
     zsh-autosuggestions
-    zsh-syntax-highlighting
     history-substring-search
     web-search
     wd
