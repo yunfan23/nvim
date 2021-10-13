@@ -26,6 +26,7 @@ autocmd VimEnter *
 call plug#begin('~/.config/nvim/autoload/plugged')
 " auto recognize color
 Plug 'gko/vim-coloresque'
+Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -103,3 +104,5 @@ Plug 'liuchengxu/vista.vim'
 Plug 'phanviet/vim-monokai-pro'
 
 call plug#end()
+
+colorscheme dracula

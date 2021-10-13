@@ -111,7 +111,7 @@ set foldmethod=indent
 set nofoldenable
 
 set termguicolors
-colorscheme monokai_pro
+colorscheme dracula
 let g:sneak#label = 1
 
 " change font in gui mode
@@ -123,3 +123,4 @@ set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
 set ssop-=curdir
 set ssop+=sesdir
+
