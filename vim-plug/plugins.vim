@@ -104,6 +104,7 @@ Plug 'sgur/vim-textobj-parameter'
 Plug 'liuchengxu/vista.vim'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'mrjones2014/legendary.nvim'
+Plug 'lewis6991/impatient.nvim'
 
 call plug#end()
 
