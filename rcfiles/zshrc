@@ -30,3 +30,7 @@ else
     fi
 fi
 unset __conda_setup
+
+alias b='cd ..'
+alias h='history'
+alias n='nvim'

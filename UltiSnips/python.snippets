@@ -1,9 +1,11 @@
-snippet pdb "Add breakpoint" b
+snippet b "Add breakpoint" b
 breakpoint()
 endsnippet
+
 snippet exit "Add sys.exit" b
 import sys; sys.exit()
 endsnippet
+
 snippet templ-script "Template: Script with traceback" b
 #!/usr/bin/env python
 import traceback
@@ -21,26 +23,11 @@ if __name__ == "__main__":
 		pdb.post_mortem()
 	sys.exit(ret)
 endsnippet
-snippet #!
-	#!/usr/bin/env python3
-endsnippet
-snippet #!2
-	#!/usr/bin/env python2
-	# -*- coding: utf-8 -*-
-endsnippet
-snippet #!3
-	#!/usr/bin/env python3
-endsnippet
-snippet imp
-	import ${0:module}
-endsnippet
-snippet uni
-	def __unicode__(self):
-		${0:representation}
-endsnippet
+
 snippet from
 	from ${1:package} import ${0:module}
 endsnippet
+
 # Module Docstring
 snippet docs
 	"""
@@ -51,14 +38,12 @@ snippet docs
 	Description: ${0}
 	"""
 endsnippet
-# Unittest skip
-snippet sk "skip unittests" b
-	@unittest.skip(${1:skip_reason})
-endsnippet
+
 snippet wh
 	while ${1:condition}:
 		${0:${VISUAL}}
 endsnippet
+
 # dowh - does the same as do...while in other languages
 snippet dowh
 	while True:
@@ -66,14 +51,17 @@ snippet dowh
 		if ${0:condition}:
 			break
 endsnippet
+
 snippet with
 	with ${1:expr} as ${2:var}:
 		${0:${VISUAL}}
 endsnippet
+
 snippet awith
 	async with ${1:expr} as ${2:var}:
 		${0:${VISUAL}}
 endsnippet
+
 # New Class
 snippet cl
 	class ${1:ClassName}(${2:object}):
@@ -83,35 +71,31 @@ snippet cl
 			self.$4 = $4
 			${0}
 endsnippet
+
 snippet cla
 	class ${1:class_name}:
 		"""${0:description}"""
 endsnippet
+
 snippet clai
 	class ${1:class_name}:
 		"""${2:description}"""
 		def __init__(self, ${3:args}):
 			${0}
 endsnippet
+
 # New Function
 snippet def
 	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
 		"""${3:docstring for $1}"""
 		${0}
 endsnippet
+
 snippet deff
 	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
 		${0}
 endsnippet
-snippet adef
-	async def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
-		"""${3:docstring for $1}"""
-		${0}
-endsnippet
-snippet adeff
-	async def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
-		${0}
-endsnippet
+
 # New Method
 snippet defi
 	def __init__(self, ${1:args}):
@@ -156,16 +140,7 @@ snippet for
 	for ${1:item} in ${2:items}:
 		${0}
 endsnippet
-# Encodes
-snippet cutf8
-	# -*- coding: utf-8 -*-
-endsnippet
-snippet clatin1
-	# -*- coding: latin-1 -*-
-endsnippet
-snippet cascii
-	# -*- coding: ascii -*-
-endsnippet
+
 # Lambda
 snippet ld
 	${1:var} = lambda ${2:vars} : ${0:action}
@@ -208,103 +183,15 @@ snippet tryef
 	finally:
 		${0}
 endsnippet
-# if __name__ == '__main__':
-snippet ifmain
-	if __name__ == '__main__':
-		${0:main()}
-endsnippet
 # __magic__
 snippet _
 	__${1:init}__
 endsnippet
 # python debugger (pdb)
 snippet pdb
-	__import__('pdb').set_trace()
+import pdb; pdb.set_trace()
 endsnippet
-# bpython debugger (bpdb)
-snippet bpdb
-	__import__('bpdb').set_trace()
-endsnippet
-# ipython debugger (ipdb)
-snippet ipdb
-	__import__('ipdb').set_trace()
-endsnippet
-# embed ipython itself
-snippet iem
-	__import__('IPython').embed()
-endsnippet
-# remote python debugger (rpdb)
-snippet rpdb
-	__import__('rpdb').set_trace()
-endsnippet
-# web python debugger (wdb)
-snippet wdb
-	__import__('wdb').set_trace()
-endsnippet
-# ptpython
-snippet ptpython
-	__import__('ptpython.repl', fromlist=('repl')).embed(globals(), locals(), vi_mode=${1:False}, history_filename=${2:None})
-endsnippet
-# python console debugger (pudb)
-snippet pudb
-	__import__('pudb').set_trace()
-endsnippet
-# python console debugger remote (pudb)
-snippet pudbr
-	from pudb.remote import set_trace
-	set_trace()
-endsnippet
-# pdb in nosetests
-snippet nosetrace
-	__import__('nose').tools.set_trace()
-endsnippet
-snippet pprint
-	__import__('pprint').pprint(${1})
-endsnippet
-snippet "
-	"""${0:doc}
-	"""
-endsnippet
-# assertions
-snippet a=
-	self.assertEqual(${0}, ${1})
-endsnippet
-# test function/method
-snippet test
-	def test_${1:description}(${2:`indent('.') ? 'self' : ''`}):
-		${0}
-endsnippet
-# test case
-snippet testcase
-	class ${1:ExampleCase}(unittest.TestCase):
-		def test_${2:description}(self):
-			${0}
-endsnippet
-# test given when then
-snippet tgwt
-	# given: ${1}
-	# when: ${2}
-	# then: ${3}
-endsnippet
-snippet fut
-	from __future__ import ${0}
-endsnippet
-#getopt
-snippet getopt
-	try:
-		# Short option syntax: "hv:"
-		# Long option syntax: "help" or "verbose="
-		opts, args = getopt.getopt(sys.argv[1:], "${1:short_options}", [${2:long_options}])
-	except getopt.GetoptError, err:
-		# Print debug info
-		print str(err)
-		${3:error_action}
-	for option, argument in opts:
-		if option in ("-h", "--help"):
-			${0}
-		elif option in ("-v", "--verbose"):
-			verbose = argument
-endsnippet
+
 # argparse
 snippet addp
 	parser = ${VISUAL:argparse.}ArgumentParser()
@@ -355,26 +242,8 @@ snippet epydoc
 	@raise e: ${0: Description}
 	"""
 endsnippet
-snippet dol
-	def ${1:__init__}(self, *args, **kwargs):
-		super(${0:ClassName}, self).$1(*args, **kwargs)
-endsnippet
-snippet kwg
-	self.${1:var_name} = kwargs.get('$1', ${2:None})
-endsnippet
-snippet lkwg
-	${1:var_name} = kwargs.get('$1', ${2:None})
-endsnippet
-snippet args
-	*args${1:,}${0}
-endsnippet
-snippet kwargs
-	**kwargs${1:,}${0}
-endsnippet
-snippet akw
-	*args, **kwargs${1:,}${0}
-endsnippet
 # comprehensions
+
 snippet repr "methods implementing string representation"
 	def __repr__(self):
 		${1:pass}
@@ -382,4 +251,31 @@ snippet repr "methods implementing string representation"
 		${2:pass}
 	def __unicode__(self):
 		${3:pass}
+endsnippet
+
+snippet head "Python source file header" b
+"""
+Description: $1
+Author: Yunfan Zhang (yunfan.zhang23@gmail.com)
+Created: `!v strftime("%Y-%m-%d %H:%M:%S%z")`
+"""
+$0
+endsnippet
+
+snippet print "Print value of some variable"
+print("$1".format($2))
+$0
+endsnippet
+
+snippet impa "import FOO as BAR" b
+import ${1:FOO} as ${2:BAR}
+endsnippet
+
+snippet main "Main function boilerplate" b
+def main():
+	$0
+
+
+if __name__ == "__main__":
+	main()
 endsnippet
