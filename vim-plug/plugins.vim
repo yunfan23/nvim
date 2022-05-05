@@ -34,7 +34,7 @@ Plug 'ChristianChiarulli/far.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'preservim/nerdtree'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'jistr/vim-nerdtree-tabs'
 " A git commit browser.
 Plug 'junegunn/gv.vim'
@@ -102,10 +102,6 @@ Plug 'kana/vim-textobj-syntax'
 Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
 Plug 'liuchengxu/vista.vim'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'mrjones2014/legendary.nvim'
 Plug 'lewis6991/impatient.nvim'
 
 call plug#end()
-
-colorscheme dracula
