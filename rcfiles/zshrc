@@ -10,7 +10,6 @@ plugins=(
     gitignore
     urltools
     catimg
-    zsh_reload
 )
 source $ZSH/oh-my-zsh.sh
 [ -f ~/.bash_user ] && . ~/.bash_user
@@ -34,3 +33,4 @@ unset __conda_setup
 alias b='cd ..'
 alias h='history'
 alias n='nvim'
+alias nvim="~/nvim-linux64/bin/nvim"
