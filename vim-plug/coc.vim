@@ -3,7 +3,6 @@ let g:coc_global_extensions = [
     \ 'coc-actions',
     \ 'coc-pyright',
     \ 'coc-json',
-    \ 'coc-clangd',
     \ ]
 
 " Give more space for displaying messages.
