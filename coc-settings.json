@@ -3,7 +3,7 @@
   "coc.preferences.jumpCommand": "drop",
   "suggest.enablePreselect": true,
   "suggest.noselect": false, // auto select the first item from auto complete preview
-  "python.pythonPath": "python",
+  // "python.pythonPath": "python",
 
   // send coc diagnostic msg to ale
   // "diagnostic.displayByAle": true,

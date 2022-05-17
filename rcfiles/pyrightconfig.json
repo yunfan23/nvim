@@ -1,4 +1,12 @@
 {
+    "extraPaths": [
+    "/home/yunfan/.local/lib/python3.8/site-packages/pymesh2-0.3-py3.8-linux-x86_64.egg/"
+  ],
+
+  "exclude": [
+    "**/__pycache__"
+  ],
+
   "reportTypeshedErrors": true,
   "reportMissingImports": true,
   "reportMissingTypeStubs": false,
@@ -8,7 +16,8 @@
   "reportGeneralTypeIssues": false,
   "reportUnusedVariable": false,
   "reportUnusedFunction": false,
-
-  "venvPath": "/home/yunfan/miniconda3/envs/",
-  "venv": "sparenet"
+  "reportUnboundVariable": false,
+  "venvPath": "/home/yunfan/miniconda3/envs",
+  "venv": "autosdf",
+  "pythonVersion": "3.8"
 }
