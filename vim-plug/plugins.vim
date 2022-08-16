@@ -68,11 +68,16 @@ Plug 'rking/ag.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'voldikss/vim-floaterm'
 Plug 'godlygeek/tabular'
-Plug 'sirver/ultisnips'
 Plug 'justinmk/vim-sneak'
 Plug 'justinmk/vim-dirvish'
 Plug 'Yggdroot/indentLine'
 Plug 'metakirby5/codi.vim'
+
+" Track the engine.
+Plug 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plug 'honza/vim-snippets'
 
 " telescope
 if has("nvim")
@@ -81,7 +86,7 @@ if has("nvim")
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  Plug 'iamcco/markdown-preview.nvim'
+  Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   " Plug 'neovim/nvim-lspconfig'
   " Plug 'kabouzeid/nvim-lspinstall'
   " Plug 'glepnir/lspsaga.nvim'

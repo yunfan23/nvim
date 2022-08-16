@@ -17,3 +17,7 @@ au BufNewFile,BufRead *.py
     \set expandtab
     \set autoindent
     \set fileformat=unix
+
+" let g:loaded_python3_provider = 0
+let g:loaded_perl_provider = 0
+let g:python3_host_prog = '~/miniconda3/bin/python'

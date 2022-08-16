@@ -16,9 +16,26 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.zshrc_user ] && . ~/.zshrc_user
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export PS1="%(1V:%F{yellow}:%(?:%F{green}:%F{red}))${DRACULA_ARROW_ICON} %F{white}8.210.190.96:%F{green}%1d$(dracula_time_segment) $DRACULA_GIT_STATUS%f%b$ "
-
 __conda_setup="$('/home/yunfan/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/yunfan/miniconda3/etc/profile.d/conda.sh" ]; then
+# . "/home/yunfan/miniconda3/etc/profile.d/conda.sh"  # commented out by conda initialize
+    else
+# export PATH="/home/yunfan/miniconda3/bin:$PATH"  # commented out by conda initialize
+    fi
+fi
+unset __conda_setup
+
+alias b='cd ..'
+alias h='history'
+alias n='nvim'
+alias nvim="~/nvim-linux64/bin/nvim"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/yunfan/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
@@ -29,8 +46,5 @@ else
     fi
 fi
 unset __conda_setup
+# <<< conda initialize <<<
 
-alias b='cd ..'
-alias h='history'
-alias n='nvim'
-alias nvim="~/nvim-linux64/bin/nvim"
