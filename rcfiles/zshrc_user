@@ -23,4 +23,5 @@ setopt hist_ignore_space
 export PROMPT="$PROMPT\$ "
 
 # bindkey -s '^e' 'nvim $(fzf)\n'
-bindkey -s '^o' 'nvim $(fzf)\n'
+# bindkey -s '^o' 'nvim $(fzf)\n'
+bindkey -s '^f' 'nvim $(fzf)\n'
