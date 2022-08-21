@@ -9,7 +9,7 @@
   // send coc diagnostic msg to ale
   // "diagnostic.displayByAle": true,
   "python.analysis.diagnosticMode": "openFilesOnly",
-  "pyright.disableLanguageServices": true,
+  // "pyright.disableLanguageServices": true,
 
   "python.linting.enabled": false,
   "python.linting.flake8Enabled": false,
