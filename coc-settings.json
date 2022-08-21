@@ -8,16 +8,10 @@
 
   // send coc diagnostic msg to ale
   // "diagnostic.displayByAle": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "pyright.disableLanguageServices": true,
 
   "python.linting.enabled": false,
   "python.linting.flake8Enabled": false,
   "diagnostic.hintSign": ""
-  // ignore unused import F401
-  // ignore line too long E501
-  // ignore line break after binary operator
-  // ignore local variable is assigned to but never used
-  // ignore multiple blank space before an operator
-  // "python.linting.flake8Args": [
-  //   "--ignore=F401,F841,E501,E221,W504"
-  // ],
 }
