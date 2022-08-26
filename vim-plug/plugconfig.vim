@@ -13,11 +13,4 @@ source $HOME/.config/nvim/vim-plug/vista.vim
 source $HOME/.config/nvim/vim-plug/indent.vim
 source $HOME/.config/nvim/vim-plug/airline.vim
 source $HOME/.config/nvim/vim-plug/snip.vim
-if has("nvim")
-  " source $HOME/.config/nvim/vim-plug/telescope.vim
-  source $HOME/.config/nvim/vim-plug/coc.vim
-  " source $HOME/.config/nvim/vim-plug/lsp.vim
-else
-  source $HOME/.config/nvim/vim-plug/repl.vim
-  source $HOME/.config/nvim/vim-plug/ycm.vim
-endif
+source $HOME/.config/nvim/vim-plug/coc.vim

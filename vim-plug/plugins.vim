@@ -85,18 +85,8 @@ if has("nvim")
   Plug 'antoinemadec/coc-fzf',  {'branch': 'release'}
   Plug 'nvim-lua/popup.nvim'
   Plug 'nvim-lua/plenary.nvim'
-  " Plug 'nvim-telescope/telescope.nvim'
-  " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-  " Plug 'neovim/nvim-lspconfig'
-  " Plug 'kabouzeid/nvim-lspinstall'
-  " Plug 'glepnir/lspsaga.nvim'
   Plug 'itchyny/vim-cursorword'
   Plug 'hrsh7th/nvim-compe'
-  " Plug 'nvim-treesitter/nvim-treesitter-textobjects'
-  " Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-endif
-if !has("nvim")
-  Plug 'sillybun/vim-repl'
 endif
 
 Plug 'skywind3000/asyncrun.vim'

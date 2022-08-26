@@ -120,3 +120,7 @@ autocmd BufRead,BufNewFile * setlocal signcolumn=yes
 autocmd BufRead,BufNewFile * highlight clear SignColumn
 
 let g:coc_disable_startup_warning = 1
+
+function! CocMinimalStatus() abort
+  return get(g:, 'coc_status', '')
+endfunction

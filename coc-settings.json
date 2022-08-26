@@ -3,15 +3,11 @@
   "coc.preferences.formatOnSaveFiletypes": ["css", "markdown"],
   "coc.preferences.jumpCommand": "drop",
   "suggest.enablePreselect": true,
-  "suggest.noselect": false, // auto select the first item from auto complete preview
-  // "python.pythonPath": "python",
-
-  // send coc diagnostic msg to ale
-  // "diagnostic.displayByAle": true,
+  "suggest.noselect": false,
   "python.analysis.diagnosticMode": "openFilesOnly",
-  // "pyright.disableLanguageServices": true,
-
   "python.linting.enabled": false,
   "python.linting.flake8Enabled": false,
+  "diagnostic.virtualTextCurrentLineOnly": true,
+  "diagnostic.messageTarget": "echo",
   "diagnostic.hintSign": ""
 }
