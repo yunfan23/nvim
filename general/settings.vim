@@ -110,9 +110,8 @@ set secure
 set foldmethod=indent
 set nofoldenable
 
-set termguicolors
-colorscheme dracula
-let g:sneak#label = 1
+" set termguicolors
+" let g:sneak#label = 1
 
 " change font in gui mode
 if has('gui_running')
