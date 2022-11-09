@@ -8,6 +8,7 @@
   "python.linting.enabled": false,
   "python.linting.flake8Enabled": false,
   "diagnostic.virtualTextCurrentLineOnly": true,
+  "pyright.inlayHints.enable": false,
   "diagnostic.messageTarget": "echo",
   "diagnostic.hintSign": ""
 }
