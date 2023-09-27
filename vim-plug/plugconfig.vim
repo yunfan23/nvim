@@ -14,3 +14,4 @@ source $HOME/.config/nvim/vim-plug/indent.vim
 source $HOME/.config/nvim/vim-plug/airline.vim
 source $HOME/.config/nvim/vim-plug/snip.vim
 source $HOME/.config/nvim/vim-plug/coc.vim
+source $HOME/.config/nvim/vim-plug/md.vim

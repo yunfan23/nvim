@@ -122,3 +122,5 @@ set ssop-=options    " do not store global and local values in a session
 set ssop-=folds      " do not store folds
 set ssop-=curdir
 set ssop+=sesdir
+
+colorscheme dracula-soft

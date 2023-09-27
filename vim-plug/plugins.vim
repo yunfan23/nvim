@@ -26,7 +26,7 @@ autocmd VimEnter *
 call plug#begin('~/.config/nvim/autoload/plugged')
 " auto recognize color
 Plug 'gko/vim-coloresque'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'Mofiqul/dracula.nvim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -36,6 +36,7 @@ Plug 'preservim/nerdtree'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install', 'for': 'python' }
 " Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'jistr/vim-nerdtree-tabs'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 " A git commit browser.
 Plug 'junegunn/gv.vim'
 " zen mode of vim
