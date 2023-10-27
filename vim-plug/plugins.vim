@@ -98,5 +98,6 @@ Plug 'kana/vim-textobj-function', { 'for':['c', 'cpp', 'vim', 'java'] }
 Plug 'sgur/vim-textobj-parameter'
 Plug 'liuchengxu/vista.vim'
 Plug 'lewis6991/impatient.nvim'
+Plug 'prichrd/netrw.nvim'
 
 call plug#end()
