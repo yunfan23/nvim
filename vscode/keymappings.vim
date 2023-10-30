@@ -21,6 +21,3 @@ nnoremap <silent> z5 <Cmd>call VSCodeNotify('editor.foldLevel5')<CR>
 nnoremap <silent> z6 <Cmd>call VSCodeNotify('editor.foldLevel6')<CR>
 nnoremap <silent> z7 <Cmd>call VSCodeNotify('editor.foldLevel7')<CR>
 xnoremap <silent> zV <Cmd>call VSCodeNotify('editor.foldAllExcept')<CR>
-
-nmap <silent> <leader>b oimport pdb; pdb.set_trace()<esc>
-nmap <silent> <leader>B Oimport pdb; pdb.set_trace()<esc>
